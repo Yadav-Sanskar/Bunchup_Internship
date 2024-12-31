@@ -1,0 +1,811 @@
+{
+    "success": true,
+    "data": {
+        "results": [
+            {
+                "universityName": "The West Bengal University of Health Sciences, Kolkata (Id: U-0586)",
+                "collegeName": "Institute of Immunoheamatology, Mumbai (Id: C-16420)",
+                "collegeType": "Recognized Center",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765e3ade770b697d5ba9"
+            },
+            {
+                "universityName": "Smt. Nathibai Damodar Thackersey Women's Univeristy, Mumbai (Id: U-0326)",
+                "collegeName": "Bartiya Gramin Punarrachnana Sansth'a Mumbai B.Ed. College for Women (Id: C-44317)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d5303"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "S.S.P.M.Mumbais Shri Swami Samarth College of Education, Agaskhind, A/p. Shenit, Tal. Sinnar, Dist.Nashik (Id: C-41430)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Nashik",
+                "id": "64d3765d3ade770b697d38e6"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Sinhgad Technical Education Societys Sinhgad Institute of Pharmacy, Pune Mumbai Bypass Highway, Narhe Ambegaon,Dist.Pune 41 (Id: C-41394)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Pune",
+                "id": "64d3765d3ade770b697d38d2"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Shree Chanakya Education Society's Indira Global Bussiness School Address: Sr. No. 64,65, Gat no. 276, Parandwadi, Near Somatane Phata, Off Old Pune Mumbai Highway, Taluka- Maval District Pune 410506 (Id: C-41359)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Pune",
+                "id": "64d3765d3ade770b697d387b"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Shree Chanakya Education Societys Indira Institute of Management, Pune Mumbai Highway, Near Wakad Police Station, Tathwade, Pune 411033 (Id: C-41542)",
+                "collegeType": "Recognized Center",
+                "stateName": "Maharashtra",
+                "districtName": "Pune",
+                "id": "64d3765d3ade770b697d387c"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Nicholas Piramal India Ltd., Quest Institute of Life Sciences, Goregaon East, Mumbai 400063 (Id: C-41995)",
+                "collegeType": "Recognized Center",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d379b"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Mumbai Education Trusts College of Pharmacy, Bhujbal Knowledge City, Adgaon , Nashik 422003 (Id: C-42111)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Nashik",
+                "id": "64d3765d3ade770b697d3753"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Mumbai Education Trusts Institute of Engineering, Bhujbal Knowledge City, Adgaon, Nashik 422003 (Id: C-41480)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Nashik",
+                "id": "64d3765d3ade770b697d3754"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Mhatama Gandhi Vidyamandirs Institute of Management and Research, Mumbai Agra Road, Panchavati, Nashik 422003 (Id: C-41901)",
+                "collegeType": "Recognized Center",
+                "stateName": "Maharashtra",
+                "districtName": "Nashik",
+                "id": "64d3765d3ade770b697d3740"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Merid Limited, New India Centre, Copyrej Road, Mumbai 400039 (Id: C-41949)",
+                "collegeType": "Recognized Center",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d3735"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Lifeline Hospital and Medical Research Centre I Pvt. Ltd., Mumbai Agra Highway, Near Dwarka Circle, Nashik 422001 (Id: C-41969)",
+                "collegeType": "Recognized Center",
+                "stateName": "Maharashtra",
+                "districtName": "Nashik",
+                "id": "64d3765d3ade770b697d36d2"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Kamla Education SocietysPratibha College of Education Plot No.2, M.I.D.C. Block D, Off Mumbai Pune Highway, Opp. Mehata Hospital, Chinchwad, Pune 411 019. (Id: C-42018)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Pune",
+                "id": "64d3765d3ade770b697d369a"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Kamla Education Society's Pratibha College of Commerce & Computer Studies, Plot No. 3 Behind Mehta Hospital, Off Mumbai Pune Road, Chinchwad, Pune 411 019. (Id: C-41429)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Pune",
+                "id": "64d3765d3ade770b697d3699"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Jaywant Shikshan Prarsark Mandals Rajarshi Shahu College of Education Sr.No.80/2, Pune Mumbai Bypass Highway, Tathwade,Pune 411 033 (Id: C-41938)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Pune",
+                "id": "64d3765d3ade770b697d367e"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "JAMIA MOHAMMADIA EDUCATION SOCIETYs MUMBAI MAULANA MUKHTAR AHMAD NADVI TECHNICAL CAMPUS, MALEGAON (Id: C-47550)",
+                "collegeType": "Recognized Center",
+                "stateName": "Maharashtra",
+                "districtName": "Nashik",
+                "id": "64d3765d3ade770b697d366e"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Institute of Sciences Institute of Business Management and Research, Mumbai Banglore Highway, Wakad, Pune 411033 (Id: C-42049)",
+                "collegeType": "Recognized Center",
+                "stateName": "Maharashtra",
+                "districtName": "Pune",
+                "id": "64d3765d3ade770b697d365e"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Gurudev Siddha Peth, Ganeshpuri, Tal Thane, Mumbai 401209 (Id: C-41537)",
+                "collegeType": "Recognized Center",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d3631"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Godavari Shikshan Mandals G.D.Sawant Arts,Commerce & Science College, Suchetanagar, Mumbai Agra Road, Nashik 422010 (Id: C-41652)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Nashik",
+                "id": "64d3765d3ade770b697d3614"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Centour Research Centre Pharmaceutics Pvt. Ltd., Shantinagar Vakola, Santacruez East, Mumbai 400055 (Id: C-41770)",
+                "collegeType": "Recognized Center",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d3591"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Bhabha Atomic Research Centre, Trombay, Mumbai 400085 (Id: C-41954)",
+                "collegeType": "Recognized Center",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d356e"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Bharati Sanskrit Vidyaniketan, Ghatkopar West, Mumbai 400084 (Id: C-41654)",
+                "collegeType": "Recognized Center",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d3578"
+            },
+            {
+                "universityName": "Pune University, Pune (Id: U-0323)",
+                "collegeName": "Ashoka Education Foundation's Ashoka Business School, Address: Next to Suman Petrol Pump, Mumbai Agra Highway, Rane Nagar, Nashik - 9. (Id: C-41439)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Nashik",
+                "id": "64d3765d3ade770b697d3548"
+            },
+            {
+                "universityName": "National Institute of Fashion Technology, Hauz Khas (Id: U-0110)",
+                "collegeName": "NATIONAL INSTITUTE OF FASHION TECHNOLOGY, MUMBAI (Id: C-47477)",
+                "collegeType": "PG Center / Off-Campus Center",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2ced"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Yerla Medical Trust and Research Centres College of Management Institutional Area Sector-4 Kharghar Navi Mumbai 410 210 (Id: C-34100)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2ba7"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "V K Krishna Menon College of Commerce and Economics Sharad Shankar Dighe College of Science Near Bhandup Rly Station Bhandup East Mumbai 400 042 (Id: C-34001)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b9d"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Vivek Education Societys Arts & Commerce College Siddharth Nagar Goregaon West Mumbai 400 062 (Id: C-33892)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b9c"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Yashwantrao Chavan College of Arts Commerce & Science Sector-15 Plot No.23 Post-Koparkairne Navi Mumbai 400 709 (Id: C-34051)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2ba6"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "VPMs Ramniklal Z Shah College of Arts Science and Commerce Mithagar Road Mulund East Mumbai 400 081 (Id: C-33970)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b9e"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Zagdu Singh Charitable Trust College of MMS Thakur House Ashok Nagar Kandivli (East) Mumbai: 400 101 (Id: C-34005)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai Suburban",
+                "id": "64d3765d3ade770b697d2ba9"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Western Naval Command College of B.Sc Hospitality Studies 4th Pasta Lane Colaba Mumbai 400 005 (Id: C-33581)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2ba2"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Wilson College Chowpatty Mumbai 400 007 (Id: C-33774)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2ba3"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Watumall Institute of Electronic Engineering and Computer Technology Plot No.47 R.G. Thadani Marg Worli Sea Face Mumbai 400 018 (Id: C-34118)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2ba1"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Vivekanand Education Societys College of Law 1st floor Trust Office Sindhi Society Chembur Mumbai-400 071 (Id: C-33870)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai Suburban",
+                "id": "64d3765d3ade770b697d2b98"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Vivekanand Education Societys Institute of Technology Sindhi Society Chembur Mumbai 400 071 (Id: C-33895)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai Suburban",
+                "id": "64d3765d3ade770b697d2b9b"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Vidya Vikas Education Societys Vikas Night College of Arts Science and Commerce Kannamwar Nagar 2 Vikhroli E Mumbai 400 083 (Id: C-33722)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b8d"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Vivekanand Education Societys Institute of Management Studies and Research 495/497 Near Municipal School Collectors Colony Chembur Mumbai - 400 074 (Id: C-33811)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai Suburban",
+                "id": "64d3765d3ade770b697d2b9a"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Vivekanand Education Societys College of Pharmacy Sindhi Society Chembur Mumbai 400 071 (Id: C-33553)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai Suburban",
+                "id": "64d3765d3ade770b697d2b99"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Vidya Vikas Education Trust College of Arts Com Sci B M M & B M S I B Patel Municipal School Goregaon W Mumbai 400 062 (Id: C-33971)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b8e"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Vishweshwar Education Societys Indra Institute of Business Management At Plot no.2 Sector 9 Sanpada Navi Mumbai-400 705 (Id: C-33769)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Thane",
+                "id": "64d3765d3ade770b697d2b95"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Vidyalankar Institute of Technology Pearl Center Senapati Bapat Marg Dadar (West) Mumbai 400 028 (Id: C-33588)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b85"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Vishweshwar Education Societys Western College of Commerce & Business Management Plot No.2 Sector 9 Sanpada Navi Mumbai 400 705 (Id: C-34161)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Sindhudurg",
+                "id": "64d3765d3ade770b697d2b96"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Vivekanand Education Societys College of Arts Science and Commerce Sindhi society Chembur Mumbai 400 071 (Id: C-33639)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b97"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Ujwal Shikshan Sansthas College of Computer Science & Information Technology at Mhada Vasahat Akurli Rd Kandivali East Mumbai 400101 (Id: C-33512)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b79"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Vedanta Foundation Opp. Niranjan Building Corner of E Rd Marine Drive Mumbai 400 002 (Id: C-33552)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b7f"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Vidyalankar Danyanpeeth Trust College of B Sc I T Wadala Mumbai 400 037 (Id: C-33511)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b84"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Veermata Jijabai Technological Institute Matunga Mumbai 400 019 (Id: C-33641)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b80"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Versova Education Trusts Smt Kamala Mehta V W A College of Commerce 7 Bunglows Versova Andheri W Mumbai 400 061 (Id: C-34015)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b82"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Tolani College of Commerce Share e Punjab Society Plot No 151 Mahakali Caves Road Andheri E Mumbai 400 093 (Id: C-34223)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b77"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Tilak Education Societys S K College of Science & Commerce At Nerul New Mumbai (Id: C-34131)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b76"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Tilak Education Society J. K. College of Science & Commerce at Plot No.22 Ghansoli Navi Mumbai 400 705 (Id: C-33884)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b73"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Tilak Education Societys College of Arts & Commerce Plot No 131 Sector 28 Vashi Navi Mumbai 400 705 (Id: C-33644)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Sindhudurg",
+                "id": "64d3765d3ade770b697d2b74"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The Taheri Scholarship Soceitys BESs Institute of Management Studies and Research Burhani College Building Nesbit Road Mazagaon Mumbai 400 01 (Id: C-33840)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b6f"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Tilak Education Societys Sharada Kurup College of Education Plot No.22 Sector 5 Ghansoli Navi Mumbai (Id: C-33968)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b75"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The Kandivli Education Societys Bhanumati Kishandas Shroff of Arts andMaganlal Hargovinddas Shroff College of Commerce Shantilal Modi Road Kandivli West Mumbai 400 067 (Id: C-33579)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b61"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The Kelkar Education Trusts Vinayak Ganesh Vaze College of Arts Science and Commerce Mithagar Road Mulund East Mumbai 400 081 (Id: C-33651)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b62"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The Mogaveera Vyavasthapaka Mandali M V Mandali College of Com. & Sci. Mogaveera Bhavan Veera Desai Road Andheri (West) Mumbai 400 058 (Id: C-33990)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai Suburban",
+                "id": "64d3765d3ade770b697d2b65"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "THE KANDIVALI EDCUATION SOCIETY’S LAW COLLEGE, MUMBAI SUBURBAN (Id: C-45205)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai Suburban",
+                "id": "64d3765d3ade770b697d2b60"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The Sarvajanik Shikshan Sanstha College of Commerce Night Vithalbhai Patel Road Mulund West Mumbai 400 080 (Id: C-33780)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b69"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The Institute of Science Fort Mumbai 400 032 (Id: C-33790)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b5d"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The Secretary Mahatma Education Society Chembur Naka Mumbai 400 071 (Id: C-33772)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b6a"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The Gurunanak Vidyak Societys College of Arts Science and Commerce Panjabi Colony Guru Tegh Bahadur Nagar Sion East Mumbai 400 037 (Id: C-33889)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b5c"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The South Indian Education Societys College of Commerce and Economics Plot No 71 72 Sion Matunga Estate Sion East Mumbai 400 022 (Id: C-33945)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b6e"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The Gokhale Education Societys College of Education and Research C/o R M Bhatt High School Parel Mumbai 400 012 (Id: C-33959)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b5a"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The B.P.C.As College of Physical Education Bharatiya Krida Mandir Naigaum Cross Road Wadala Mumbai 400 031 (Id: C-34070)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai Suburban",
+                "id": "64d3765d3ade770b697d2b54"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The Byramjee Jeejeebhoy Parsee Charitable Trust College of Commerce Opp Charni Road Rly Station 33 M Karve Road Mumbai 400 004 (Id: C-33919)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b55"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The Borivli Education Societys Matushree Pushpaben Valia College of Commerce Factory Lane M K High School Compound Borivli W Mumbai 400 092 (Id: C-33624)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b53"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The Bombay St. Xaviers College Societys Xaviers Institute of Management Xaviers College 5 Mahapalika Marg Mumbai 400 001 (Id: C-33589)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b51"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The Bombay Xavierian Corporation Pvt. Ltds College of Engineering Mahim Causeway Mahim Mumbai-400 016 (Id: C-33830)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b52"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "THE CEO NAGAR YUVAK SHIKSHAN SANSTHAS NEW HORIZON COLLEGE OF COMMERCE, MUMBAI (Id: C-45198)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b57"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The Bombay flying Club Juhu Arodrome Juhu Mumbai 400 049 (Id: C-33596)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b4e"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The Bombay Salesian Societys Don Bosco Institute Technology at Premier Automobile Road Kurla (W) Mumbai 400 070 (Id: C-33880)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai Suburban",
+                "id": "64d3765d3ade770b697d2b50"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The Gurunanak Institute of Management Studies for MMS Degree Course At Matunga Mumbai 400 019 (Id: C-33677)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b5b"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Thakur Educational Trusts Thakur College of Science and Commerce Thakur Village W E Highway Kandivli East Mumbai 400 101 (Id: C-33795)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b43"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Terna Public Charitable Trusts Terna College of Engineering Nerul Navi Mumbai (Id: C-34092)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b3f"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Thadomal Shahani Engineering College 32nd Road TPS III Bandra Mumbai 400 050 (Id: C-33681)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai Suburban",
+                "id": "64d3765d3ade770b697d2b40"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Thakur Educational Trusts Thakur Institute of Management Studies Career Development and Research Thakur Village W. E. Highway Kandivli (East) Mumbai 400 101 (Id: C-34183)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai Suburban",
+                "id": "64d3765d3ade770b697d2b44"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Thakur College of Aviation Shaymnarayan Thakur Marg Thakur Villaige Samata Nagar Kandivli (E) Mumbai 400 101 (Id: C-34140)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b41"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Thakur College of Engineering & Technology, Thakur Villaige Samata Nagar Kandivli (E) Mumbai 400 101",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai Suburban",
+                "id": "64d3765d3ade770b697d2b42"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Thakur Education Trusts Thakur Ramnarayan College of Law Shyamnarayan Thakur Marg Thakur Village Kandivli(East) Mumbai-400 101 (Id: C-33782)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai Suburban",
+                "id": "64d3765d3ade770b697d2b46"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The Anjuman-I-Islam College of Hotel & Tourism Management CST Mumbai 400 001 (Id: C-33559)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b4b"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "The All India Khilafat Committees College of Education Khilafat House 173-175 Motishah Lane Byculla Mumbai 400 027 (Id: C-33499)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b4a"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Thakur Educational Trusts Thakur Shyamnarayan College of Eduction & Research Thakur Village, Kandivli (E) Mumbai 400 101 (Id: C-33531)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai Suburban",
+                "id": "64d3765d3ade770b697d2b45"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Suman Education Society L. N. College of Commerce & Science ( for women only) at Suman Education Society Campus Beside Ekvira School Charkop Sector-I Kandivali (W) Mumbai 400 067 (Id: C-34032)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai Suburban",
+                "id": "64d3765d3ade770b697d2b37"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Suman Education Society Campus Beside Ekvira School Off. Charkop Naka Charkop Sector-I Kandivali (West) Mumbai 400 067 (Id: C-33988)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai Suburban",
+                "id": "64d3765d3ade770b697d2b36"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "St Xaviers College Mahapalika Marg Mumbai 400 001 (Id: C-33555)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b31"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "St. Xaviers Institute of Education 40 New Marine Lines U S I S Library Mumbai 400 020 (Id: C-33560)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b32"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Sudhagad Education Societys Shikshan Maharshi Dadaseheb Limaye Arts Commerce Science & Computer Science College Sector3E CIDCO Colony Kalamboli Navi Mumbai 410 218 (Id: C-34024)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b34"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "S.P.M. Mumbais Academy of Aviation S.S.P.M.S Education Complex Opp Gouripada Talao Milind Nagar Kalyan (W) Dist- Thane-421 301 (Id: C-34147)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Thane",
+                "id": "64d3765d3ade770b697d2b26"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Sree Naryana Guru College of Commerce P L Lokhande Marg Chembur Mumbai 400 089 (Id: C-33904)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b27"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "St Andrews College of Arts Science & Commerce St Domnic Road Bandra West Mumbai 400 050 (Id: C-34047)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b28"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "ST WILFRED COLLEGE OF LAW IMPARTING LLB, MUMBAI (Id: C-45197)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b2d"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Sterling Institute of Management Studies Plot No.93/93A Sector 19 Nerul (E) Navi Mumbai 400 706 (Id: C-34012)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b29"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "St. Francis Institute of Technology (Engineering College) Mount Francis Mount Poinsur S V P Road Post Box No .8456 Borivli (West) Mumbai 400 103 (Id: C-33882)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai Suburban",
+                "id": "64d3765d3ade770b697d2b2a"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "St. Teresas Institute of Education C/o St Teresas Convent S V Road Santacruz Mumbai 400 054 (Id: C-33960)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai Suburban",
+                "id": "64d3765d3ade770b697d2b2c"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Smt Durga Devi Sharma Charitable Trusts Chandrabhan Sharma College of Arts Commerce & Science At Powai Vihar Mumbai 400 076 (Id: C-34088)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b0d"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "S K Somaiya Vidyavihars College of Arts Science & Commerce Vidyavihar Mumbai 400 077 (Id: C-33637)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b0a"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "Smt Gulbanu A. Lalani Educational Trusts College of Commerce for Women Dahisar E Mumbai 400 068 (Id: C-33574)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b0f"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "South Indian Education Scocietys College of Engineering Sector V Nerul Navi Mumbai 400 706 (Id: C-33861)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b20"
+            },
+            {
+                "universityName": "Mumbai University Mumbai (Id: U-0318)",
+                "collegeName": "South Indian Education Societys College of Arts Science and Commerce Sion West Mumbai 400 022 (Id: C-33670)",
+                "collegeType": "Affiliated College",
+                "stateName": "Maharashtra",
+                "districtName": "Mumbai",
+                "id": "64d3765d3ade770b697d2b21"
+            }
+        ],
+        "page": 1,
+        "limit": 100,
+        "totalPages": 5,
+        "totalResults": 469
+    }
+}
