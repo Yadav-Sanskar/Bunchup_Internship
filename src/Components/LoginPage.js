@@ -48,7 +48,7 @@ const LoginPage = () => {
           className="w-full border-b border-gray-300 text-white bg-transparent focus:outline-none focus:border-yellow-400 mb-7"
           value={formData.mobile}
           onChange={handleInputChange}
-          style={{ borderTopWidth: '0', borderLeftWidth: '0', borderRightWidth: '0', borderBottomWidth: '2px' }}
+          
 
         />
         <div className="relative w-full mb-6">
