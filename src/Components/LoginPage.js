@@ -1,6 +1,6 @@
 import './Component.css';
 import { Link } from 'react-router-dom';
-
+import { Visibility, VisibilityOff } from "@mui/icons-material";
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -25,57 +25,64 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gradient-to-b from-gray-900 to-black ">  
- 
-    <div className="bg-gradient-to-b from-gray-900 to-black rounded-lg p-8 shadow-lg text-center  ">
-      <h1 className="text-2xl font-bold text-white mb-2">
-              Welcome to <span className="text-yellow-400">BunchUp</span>
-            </h1>
-            <p className="text-gray-400 mb-6">Get ready to move out and have fun</p>
+    <div className="flex items-center justify-center h-screen bg-gradient-to-b from-gray-900 to-black   ">  
+      <div className="bg-gradient-to-b from-gray-800 to-gray-800 rounded-lg p-8 shadow-lg text-center    ">
+        <h1 className="text-2xl font-bold text-white mb-2  ">
+          Welcome to <span className="text-yellow-400">BunchUp</span>
+        </h1>
+        <p className="text-gray-400  text-xs">Get ready to move out and have fun</p>
 
-            {/* Image Placeholder */}
-            <img
-  className="w-[277px] h-[194px] mx-auto bg-cover mb-6"
-  src="https://via.placeholder.com/277x194"
-  alt=""
-/>
 
-      <input
-        type="text"
-        name="mobile"
-        placeholder="Mobile No"
-        className="input-style"
-        value={formData.mobile}
-        onChange={handleInputChange}
-      />
-      <div className="relative w-full">
+
+        {/* Image Placeholder */}
+        <img
+            className="w-[277px] h-[194px] bg-cover mb-6 mt-10"
+            src={require('../Image/bro1.png')}
+            alt="Custom"
+          />
+
         <input
-          type={showPassword ? "text" : "password"}
-          name="password"
-          placeholder="Password"
-          className="input-style"
-          value={formData.password}
+          type="text"
+          name="mobile"
+          placeholder="Mobile No"
+          className="w-full border-b border-gray-300 text-white bg-transparent focus:outline-none focus:border-yellow-400 mb-7"
+          value={formData.mobile}
           onChange={handleInputChange}
+          style={{ borderTopWidth: '0', borderLeftWidth: '0', borderRightWidth: '0', borderBottomWidth: '2px' }}
+
         />
-        <span
-          className="absolute right-4 top-2 text-gray-500 cursor-pointer"
-          onClick={togglePasswordVisibility}
+        <div className="relative w-full mb-6">
+          <input
+            type={showPassword ? "text" : "password"}
+            name="password"
+            placeholder="Password"
+            className="w-full py-2 border-b-2 border-gray-300 focus:outline-none focus:border-yellow-400 text-white bg-transparent"
+            value={formData.password}
+            onChange={handleInputChange}
+            style={{ borderTopWidth: '0', borderLeftWidth: '0', borderRightWidth: '0', borderBottomWidth: '2px' }}
+          />
+          <span
+            className="absolute right-4 top-2 text-gray-200 cursor-pointer"
+            onClick={togglePasswordVisibility}
+          >
+            {showPassword ? <Visibility /> : <VisibilityOff />}
+          </span>
+        </div>
+        <button
+          onClick={handleLogin}
+          className="bg-gradient-to-r from-yellow-300 to-yellow-600 text-black font-bold py-2 px-4 transition w-full rounded-full border mt-3"
         >
-          {showPassword ? "🙈" : "👁️"}
-        </span>
+          Log in
+        </button>
+
+        <p className="text-base text-gray-400 mt-4">
+          Don't have an account?{" "}
+          <Link to="/create-account" className="text-teal-50 cursor-pointer">
+            Sign up
+          </Link>
+        </p>
       </div>
-      <button onClick={handleLogin} className="bg-gradient-to-r from-yellow-300 to-yellow-600 text-black text-black font-bold py-2 px-4  transition w-full rounded-full border">
-        Log in
-      </button>
-
-      <p className="text-sm text-gray-400 mt-4">
-        Don't  have an account?{}
-        <Link to="/create-account" className="text-yellow-500 cursor-pointer" >Sign up</Link>
-      </p>
-      
     </div>
-    </div>
-
   );
 };
 

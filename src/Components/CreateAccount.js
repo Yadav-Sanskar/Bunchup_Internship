@@ -15,15 +15,15 @@ const CreateAccount = () => {
   };
 
   return (
-    <div  className="flex items-center justify-center h-screen bg-gradient-to-b from-gray-900 to-black">  
-    <div className="bg-gradient-to-b from-gray-900 to-black text-white rounded-lg p-8 shadow-lg w-80 mx-auto text-center  ">
+    <div  className="flex items-center justify-center h-screen bg-gradient-to-b from-gray-900 to-black ">  
+    <div className="bg-gradient-to-b from-gray-800 to-gray-800 text-white rounded-lg p-8 shadow-lg w-80 mx-auto text-center  ">
       
-      <h1 className="text-2xl font-bold text-white-400 mb-2">
+      <h1 className="text-2xl font-bold text-white-400 mb-2 mt-7">
         Welcome to <span className="text-yellow-400">BunchUp</span>
       </h1>
       
       <img
-            className="w-[277px] h-[194px] bg-cover mb-6 mt-20"
+            className="w-[180px] h-[170px] bg-cover mb-6 mt-14 mx-7"
             src={require('../Image/bro.png')}
             alt="Custom"
           />
@@ -34,7 +34,8 @@ const CreateAccount = () => {
         placeholder="Enter Mobile No"
         value={mobileNumber}
         onChange={(e) => setMobileNumber(e.target.value)}
-        className="w-full py-2 px-3 text-lg rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-yellow-500 mb-4"
+        className="w-full border-b border-gray-300 text-white bg-transparent focus:outline-none focus:border-yellow-400 mb-7 mt-14"
+        style={{ borderTopWidth: '0', borderLeftWidth: '0', borderRightWidth: '0', borderBottomWidth: '2px' }}
       />
       <button
         onClick={handleContinue}
@@ -42,7 +43,7 @@ const CreateAccount = () => {
       >
         Continue
       </button>
-      <p className="text-sm text-gray-400 mt-4">
+      <p className="text-base text-gray-400 mt-4 mb-8">
         Already have an account?{}
         <Link to="/" className="text-yellow-500 cursor-pointer" >Sign in</Link>
       </p>
