@@ -43,7 +43,7 @@ const CreateAccount = () => {
       >
         Continue
       </button>
-      <p className="text-base text-gray-400 mt-4 mb-8">
+      <p className="text-base text-gray-400 mt-2 mb-10">
         Already have an account?{}
         <Link to="/" className="text-yellow-500 cursor-pointer" >Sign in</Link>
       </p>

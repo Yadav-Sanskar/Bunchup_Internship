@@ -83,7 +83,7 @@ const OTPVerification = () => {
 
         <button
           onClick={handleContinue}
-          className="bg-gradient-to-r from-yellow-300 to-yellow-600 text-black font-bold py-2 px-4 transition w-full rounded-full border mt-7"
+          className="bg-gradient-to-r from-yellow-300 to-yellow-600 text-black font-bold py-2 px-4 transition w-full rounded-full border mt-7 mb-8"
         >
           Continue
         </button>

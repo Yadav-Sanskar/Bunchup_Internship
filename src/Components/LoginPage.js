@@ -27,7 +27,7 @@ const LoginPage = () => {
   return (
     <div className="flex items-center justify-center h-screen bg-gradient-to-b from-gray-900 to-black   ">  
       <div className="bg-gradient-to-b from-gray-800 to-gray-800 rounded-lg p-8 shadow-lg text-center    ">
-        <h1 className="text-2xl font-bold text-white mb-2  ">
+        <h1 className="text-2xl font-bold text-white mb-0  ">
           Welcome to <span className="text-yellow-400">BunchUp</span>
         </h1>
         <p className="text-gray-400  text-xs">Get ready to move out and have fun</p>
@@ -45,9 +45,10 @@ const LoginPage = () => {
           type="text"
           name="mobile"
           placeholder="Mobile No"
-          className="w-full border-b border-gray-300 text-white bg-transparent focus:outline-none focus:border-yellow-400 mb-7"
+          className="w-full border-b border-gray-300 text-white bg-transparent focus:outline-none focus:border-yellow-400 mb-7 round-full"
           value={formData.mobile}
           onChange={handleInputChange}
+          style={{ borderTopWidth: '0', borderLeftWidth: '0', borderRightWidth: '0', borderBottomWidth: '2px' }}
           
 
         />
@@ -75,7 +76,7 @@ const LoginPage = () => {
           Log in
         </button>
 
-        <p className="text-base text-gray-400 mt-4">
+        <p className="text-base text-gray-400 mt-2 mb-3">
           Don't have an account?{" "}
           <Link to="/create-account" className="text-teal-50 cursor-pointer">
             Sign up
