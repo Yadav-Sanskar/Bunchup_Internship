@@ -31,7 +31,7 @@ const LoginPage = () => {
 
 
 
-      <div className="relative bg-gradient-to-b from-gray-800 to-gray-800 rounded-lg p-8 shadow-lg text-center">
+      <div className="relative bg-gradient-to-b from-gray-800 to-gray-800 rounded-lg p-8 shadow-lg text-center h-screen">
         <h1 className="text-2xl font-bold text-white mb-0">
           Welcome to <span className="text-yellow-400">BunchUp</span>
         </h1>
