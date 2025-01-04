@@ -27,7 +27,7 @@ const LoginPage = () => {
   return (
     <div className="relative flex items-center justify-center h-screen bg-gradient-to-b from-gray-900 to-black">
       {/* Decorative Yellow Ellipse */}
-      <div className="absolute top-0 ml-56 w-52 h-52 bg-gradient-to-r from-white  to-yellow-200 opacity-70 z-10 rounded-full"></div>
+     
 
 
 
