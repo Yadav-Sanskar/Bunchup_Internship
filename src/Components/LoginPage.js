@@ -70,7 +70,7 @@ const LoginPage = () => {
             onChange={handleInputChange}
           />
           <span
-            className="absolute right-1 top-2 text-gray-200 cursor-pointer"
+            className="absolute right-1 top-2 text-gray-200 cursor-pointer -mt-1"
             onClick={togglePasswordVisibility}
           >
             {showPassword ? <Visibility /> : <VisibilityOff />}
