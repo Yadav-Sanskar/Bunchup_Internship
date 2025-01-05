@@ -29,7 +29,7 @@ const LoginPage = () => {
         <div
           className="absolute inset-0 bg-gradient-to-br"
           style={{
-            background: "linear-gradient(135deg,#181812 40%,rgb(15, 15, 15) 50%)",
+            background: "linear-gradient(135deg,rgb(15, 15, 15)40%,rgb(15, 15, 15) 60%)",
           }}
         ></div>
 
@@ -65,12 +65,12 @@ const LoginPage = () => {
             type={showPassword ? "text" : "password"}
             name="password"
             placeholder="Password"
-            className="w-full py-1 border-b-2 border-gray-300 focus:outline-none  text-white bg-transparent placeholder-white"
+            className="w-full py-1 border-b border-gray-300 focus:outline-none  text-white bg-transparent placeholder-white"
             value={formData.password}
             onChange={handleInputChange}
           />
           <span
-            className="absolute right-4 top-2 text-gray-200 cursor-pointer"
+            className="absolute right-1 top-2 text-gray-200 cursor-pointer"
             onClick={togglePasswordVisibility}
           >
             {showPassword ? <Visibility /> : <VisibilityOff />}
@@ -78,12 +78,12 @@ const LoginPage = () => {
         </div>
         <button
           onClick={handleLogin}
-          className="bg-gradient-to-r from-[rgba(255,240,0,1)] to-red-400 text-black font-bold py-2 px-4 transition w-full rounded-full border mt-3 text-xl"
+          className="bg-gradient-to-r from-[rgba(255,240,0,1)] to-red-300 text-black text-xl py-2 px-4 transition w-full rounded-full  border-black mt-3  "
         >
           Log in
         </button>
 
-        <p className="text-base text-white mt-2 mb-3">
+        <p className="text-base text-white mt-2 mb-4">
           Don't have an account? {" "}
           <Link to="/create-account" className="text-teal-50 text-xl cursor-pointer">
             Sign up
