@@ -1,9 +1,6 @@
-import './Component.css';
-import { Link } from 'react-router-dom';
-import { Visibility, VisibilityOff } from "@mui/icons-material";
-
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Visibility, VisibilityOff } from "@mui/icons-material";
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({ mobile: "", password: "" });
@@ -25,21 +22,32 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="relative flex items-center justify-center h-screen bg-gradient-to-b from-gray-900 to-black">
-      {/* Decorative Yellow Ellipse */}
-     
+    <div className="relative flex items-center justify-center h-screen w-screen overflow-hidden">
+      {/* Full-Screen Glass Background */}
+      <div className="absolute inset-0 ">
+        {/* Gradient Overlay */}
+        <div
+          className="absolute inset-0 bg-gradient-to-br"
+          style={{
+            background: "linear-gradient(135deg,#181812 40%,rgb(15, 15, 15) 50%)",
+          }}
+        ></div>
 
+        {/* Subtle Yellow Glow */}
+        <div className="absolute top-0 right-52 w-[350px] h-[200px] bg-[rgba(255,240,0,1)]/100  rounded-full blur-[150px]"></div>
 
+        <div className="absolute bottom-0 left-60 w-[350px] h-[150px] bg-[rgba(255,240,0,1)]/100 rounded-full blur-[150px]"></div>
+      </div>
 
-      <div className="relative bg-gradient-to-b from-gray-800 to-gray-800 rounded-lg p-8 shadow-lg text-center h-screen">
+      {/* Login Box */}
+      <div className="relative z-10 bg-white/10 backdrop-blur-lg border border-white/20 bg-transparent rounded-[20px] p-8 shadow-lg text-center max-w-md">
         <h1 className="text-2xl font-bold text-white mb-0">
-          Welcome to <span className="text-yellow-400">BunchUp</span>
+          Welcome to <span className="text-[rgba(255,240,0,1)]">BunchUp</span>
         </h1>
-        <p className="text-gray-400 text-xs">Get ready to move out and have fun</p>
+        <p className="text-white text-xs">Get ready to move out and have fun</p>
 
-        {/* Image Placeholder */}
         <img
-          className="w-[277px] h-[194px] bg-cover mb-6 mt-10"
+          className="w-[270px] h-[180px] bg-cover mb-8 mt-10 px-2 "
           src={require('../Image/bro1.png')}
           alt="Custom"
         />
@@ -48,20 +56,18 @@ const LoginPage = () => {
           type="text"
           name="mobile"
           placeholder="Mobile No"
-          className="w-full border-b border-gray-300 text-white bg-transparent focus:outline-none focus:border-yellow-400 mb-7"
+          className="w-full border-b border-gray-300 text-white bg-transparent focus:outline-none  mb-7 placeholder-white"
           value={formData.mobile}
           onChange={handleInputChange}
-          style={{ borderTopWidth: '0', borderLeftWidth: '0', borderRightWidth: '0', borderBottomWidth: '2px' }}
         />
         <div className="relative w-full mb-6">
           <input
             type={showPassword ? "text" : "password"}
             name="password"
             placeholder="Password"
-            className="w-full py-2 border-b-2 border-gray-300 focus:outline-none focus:border-yellow-400 text-white bg-transparent"
+            className="w-full py-1 border-b-2 border-gray-300 focus:outline-none  text-white bg-transparent placeholder-white"
             value={formData.password}
             onChange={handleInputChange}
-            style={{ borderTopWidth: '0', borderLeftWidth: '0', borderRightWidth: '0', borderBottomWidth: '2px' }}
           />
           <span
             className="absolute right-4 top-2 text-gray-200 cursor-pointer"
@@ -72,14 +78,14 @@ const LoginPage = () => {
         </div>
         <button
           onClick={handleLogin}
-          className="bg-gradient-to-r from-yellow-300 to-yellow-600 text-black font-bold py-2 px-4 transition w-full rounded-full border mt-3"
+          className="bg-gradient-to-r from-[rgba(255,240,0,1)] to-red-400 text-black font-bold py-2 px-4 transition w-full rounded-full border mt-3 text-xl"
         >
           Log in
         </button>
 
-        <p className="text-base text-gray-400 mt-2 mb-3">
-          Don't have an account?{" "}
-          <Link to="/create-account" className="text-teal-50 cursor-pointer">
+        <p className="text-base text-white mt-2 mb-3">
+          Don't have an account? {" "}
+          <Link to="/create-account" className="text-teal-50 text-xl cursor-pointer">
             Sign up
           </Link>
         </p>
