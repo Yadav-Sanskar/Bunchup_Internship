@@ -19,10 +19,20 @@ function App() {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gradient-to-b from-gray-900 to-black    ">  
-    <div className="bg-gradient-to-b from-gray-800 to-gray-800 rounded-lg p-8 shadow-lg text-center max-w-[350px] mx-auto     ">
-         
-          <h className="text-4xl font-bold text-yellow-400 mb-8  ">Show us how you look</h>
+    <div className="relative flex items-center justify-center h-screen w-screen overflow-hidden">
+      <div className="absolute inset-0">
+        <div
+          className="absolute inset-0 bg-gradient-to-br"
+          style={{
+            background: "linear-gradient(135deg,rgba(15, 15, 15, 0.97)40%,rgb(15, 15, 15) 60%)",
+          }}
+        ></div>
+        <div className="absolute top-0 right-52 w-[350px] h-[150px] bg-[rgba(255,240,0,1)]/100  rounded-full blur-[150px]"></div>
+        <div className="absolute bottom-0 left-60 w-[350px] h-[100px] bg-[rgba(255,240,0,1)]/100 rounded-full blur-[150px]"></div>
+      </div>
+
+      <div className="relative z-10 bg-white/10 backdrop-blur-lg border border-white/20 bg-transparent rounded-[20px] p-8 shadow-lg text-center max-w-md" style={{ width: "352px" }}>
+        <h1 className="text-4xl font-bold text-[rgba(255,240,0,1)] mb-">Tell us more about you</h1>
           
       <div className="mt-7 mb-5">
         {profileImage ? (

@@ -15,40 +15,61 @@ const CreateAccount = () => {
   };
 
   return (
-    <div  className="flex items-center justify-center h-screen bg-gradient-to-b from-gray-900 to-black ">  
-    <div className="bg-gradient-to-b from-gray-800 to-gray-800 text-white rounded-lg p-8 shadow-lg w-80 mx-auto text-center  ">
-      
-      <h1 className="text-2xl font-bold text-white-400 mb-2 mt-7">
-        Welcome to <span className="text-yellow-400">BunchUp</span>
-      </h1>
+
+    <div className="relative flex items-center justify-center h-screen w-screen overflow-hidden">
+      {/* Full-Screen Glass Background */}
+      <div className="absolute inset-0 ">
+        {/* Gradient Overlay */}
+        <div
+          className="absolute inset-0 bg-gradient-to-br"
+          style={{
+            background: "linear-gradient(135deg,rgba(15, 15, 15, 0.97)40%,rgb(15, 15, 15) 60%)",
+          }}
+        ></div>
+
+        {/* Subtle Yellow Glow */}
+        <div className="absolute top-0 left-52 w-[350px] h-[150px] bg-[rgba(255,240,0,1)]/100  rounded-full blur-[150px]"></div>
+
+        <div className="absolute bottom-0 right-60 w-[350px] h-[100px] bg-[rgba(255,240,0,1)]/100 rounded-full blur-[150px]"></div>
+      </div>
+
+
+
+      <div className="relative z-10 bg-white/10 backdrop-blur-lg border border-white/20 bg-transparent rounded-[20px] p-8 shadow-lg text-center max-w-md" style={{ width: "352px" }}>
+        <h1 className="text-2xl font-bold text-white mb-0">
+          Welcome to <span className="text-[rgba(255,240,0,1)]">BunchUp</span>
+        </h1>
       
       <img
-            className="w-[180px] h-[170px] bg-cover mb-6 mt-14 mx-7"
+            className="w-[160px] h-[160px] bg-cover mb-20 mt-14 mx-14"
             src={require('../Image/bro.png')}
             alt="Custom"
           />
 
-      <input
-        type="tel"
-        maxLength="10"
-        placeholder="Enter Mobile No"
-        value={mobileNumber}
-        onChange={(e) => setMobileNumber(e.target.value)}
-        className="w-full border-b border-gray-300 text-white bg-transparent focus:outline-none focus:border-yellow-400 mb-7 mt-14"
-        style={{ borderTopWidth: '0', borderLeftWidth: '0', borderRightWidth: '0', borderBottomWidth: '2px' }}
-      />
+      
+
+         <input
+          type="text"
+          name="mobile"
+          placeholder=" Enter Mobile No"
+          className=" w-full border-b border-gray-300 text-white bg-transparent focus:outline-none  mb-7 placeholder-white"
+          value={mobileNumber}
+          onChange={(e) => setMobileNumber(e.target.value)}
+        />
+
       <button
         onClick={handleContinue}
-        className="bg-gradient-to-r from-yellow-300 to-yellow-600 text-black text-black font-bold py-2 px-4  transition w-full rounded-full border"
+        className="bg-gradient-to-r from-[rgba(255,240,0,1)] to-red-300 text-black text-xl py-2 px-4 transition w-full rounded-full  border-black mt-3 "
       >
         Continue
       </button>
-      <p className="text-base text-gray-400 mt-2 mb-10">
-        Already have an account?{}
-        <Link to="/" className="text-yellow-500 cursor-pointer" >Sign in</Link>
+      <p className="text-base text-white mt-7 mb-8  ">
+        Already have an account?{} <span className='mr-2'></span>
+        <Link to="/" className="text-[rgba(255,240,0,1)] cursor-pointer text-xl " >Sign in</Link>
       </p>
     </div>
     </div>
+    
   );
 };
 

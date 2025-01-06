@@ -12,13 +12,13 @@ const LoginPage = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const togglePasswordVisibility = () => {
+  const togglePasswordVisibility = () => { 
     setShowPassword((prev) => !prev);
   };
 
   const handleLogin = () => {
     // API call here
-    navigate("/");
+    navigate("/");   
   };
 
   return (
@@ -40,7 +40,7 @@ const LoginPage = () => {
       </div>
 
       {/* Login Box */}
-      <div className="relative z-10 bg-white/10 backdrop-blur-lg border border-white/20 bg-transparent rounded-[20px] p-8 shadow-lg text-center max-w-md">
+      <div className="relative z-10 bg-white/10 backdrop-blur-lg border border-white/20 bg-transparent rounded-[20px] p-8 shadow-lg text-center max-w-md" style={{ width: "352px" }}>
         <h1 className="text-2xl font-bold text-white mb-0">
           Welcome to <span className="text-[rgba(255,240,0,1)]">BunchUp</span>
         </h1>
