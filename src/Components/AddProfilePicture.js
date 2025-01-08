@@ -2,21 +2,34 @@ import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
 
-function App() {
+
+
+
+
+const App = () => {
   const [profileImage, setProfileImage] = useState(null);
 
   const handleImageUpload = (event) => {
     const file = event.target.files[0];
     if (file) {
-      setProfileImage(URL.createObjectURL(file));
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        setProfileImage(e.target.result); // Load image as a base64 string
+      };
+      reader.readAsDataURL(file);
     }
   };
-  
+
   const navigate = useNavigate();
   const handleLogin = () => {
     // API call here
     navigate("/interests");
   };
+
+
+
+
+  
 
   return (
     <div className="relative flex items-center justify-center h-screen w-screen overflow-hidden">
@@ -32,35 +45,56 @@ function App() {
       </div>
 
       <div className="relative z-10 bg-white/10 backdrop-blur-lg border border-white/20 bg-transparent rounded-[20px] p-8 shadow-lg text-center max-w-md" style={{ width: "352px" }}>
-        <h1 className="text-4xl font-bold text-[rgba(255,240,0,1)] mb-">Tell us more about you</h1>
-          
-      <div className="mt-7 mb-5">
-        {profileImage ? (
-          <span>+</span>
-        ) : (
-          <div className=" w-[250px] h-[250px] ml-5  cursor-pointer ">
-            <img src={require("../Image/photo.png")}  alt="Custom"/>
-          </div>
-        )}
-        <input
-          type="file"
-          accept="image/*"
-          onChange={handleImageUpload}
-          hidden
-        />
-      </div>
-      <label htmlFor="profile-image-upload" className="text-white text-sm ">
+        <h1 className="text-3xl font-bold text-[rgba(255,240,0,1)] mb-">Show us how </h1>
+        <h1 className="text-3xl font-bold text-[rgba(255,240,0,1)] mb-"> you look</h1>
+
+        
+        
+        <div className="mt-7 mb-5">
+      {profileImage ? (
+        <div className="w-[270px] h-[270px] cursor-pointer overflow-hidden">
+          <img
+            src={profileImage}
+            alt="Uploaded Preview"
+            className="w-[270px] h-[270px] object-cover" 
+            onClick={() => document.getElementById("fileInput").click()}
+          />
+        </div>
+      ) : (
+        <div
+          className="w-[270px] h-[270px] ml-3 cursor-pointer flex items-center justify-center  rounded-lg"
+          onClick={() => document.getElementById("fileInput").click()}
+        >
+          <img
+            src={require("../Image/photo.png")}
+            alt="Placeholder"
+            className="w-full h-full object-contain rounded-lg" 
+          />
+        </div>
+      )}
+      <input
+        id="fileInput"
+        type="file"
+        accept="image/*"
+        onChange={handleImageUpload}
+        hidden
+      />
+    </div>
+
+
+
+        <label htmlFor="profile-image-upload" className="text-white text-sm ">
           Add a clear picture of yourself
         </label>
 
 
-      <button onClick={handleLogin} className="verify-button  bg-gradient-to-r from-yellow-300 to-yellow-600 text-black font-medium py-2 px-4 transition w-full rounded-full  
+        <button onClick={handleLogin} className="verify-button  bg-gradient-to-r from-yellow-300 to-yellow-600 text-black font-medium py-2 px-4 transition w-full rounded-full  
                           mt-16 text-xl ">Get Profile Verified</button>
-      <p className="verification-details text-white text-xs mb-5 ">
-        Verify now to get 50 BunCoins <span className="info-icon text-yellow-400">Ⓑ</span>
-      </p>
-    
-    </div>
+        <p className="verification-details text-gray-300 text-xs mb-5 mt-3 ">
+          Verify now to get 50 BunCoins <span className="info-icon text-yellow-400">Ⓑ</span>
+        </p>
+
+      </div>
     </div>
   );
 }
