@@ -109,12 +109,15 @@ const AdditionalDetails = () => {
         : "bg-[rgba(255,255,255,0.1)] text-white"
     }`}
   />
+  {/* Dropdown for Search Results */}
   {searchTerm && filteredColleges.length > 0 && (
-    <div className="absolute w-full bg-white border border-white mt-1 rounded-lg max-h-45 overflow-auto">
+    <div
+      className="absolute w-full bg-[rgba(255,255,255,0.9)] backdrop-blur-md border border-gray-300 mt-1 rounded-lg shadow-lg max-h-60 overflow-y-auto z-10"
+    >
       {filteredColleges.slice(0, 5).map((college) => (
         <div
           key={college.id}
-          className="px-4 py-2 cursor-pointer hover:bg-gray-200"
+          className="px-4 py-2 cursor-pointer hover:bg-gray-200 transition-all duration-150"
           onClick={() => handleSelectCollege(college.collegeName)}
         >
           {college.collegeName}
