@@ -3,26 +3,37 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const OTPVerification = () => {
-  const [formData, setFormData] = useState({ otp: ["", "", "", ""] }); 
+  const [formData, setFormData] = useState(["", "", "", ""]);
   const navigate = useNavigate();
 
-  // const handleOTPChange = (index, value) => {
-  //   const otpArr = [...formData.otp]; 
-  //   otpArr[index] = value.slice(0, 1); 
-  //   setFormData({ ...formData, otp: otpArr }); 
-  // };
+  const handleOTPChange = (index, value) => {
+    if (isNaN(value)) return; 
+    const newOtp = [...formData];
+    newOtp[index] = value.slice(0, 1); 
+    setFormData(newOtp);
+
+    
+    if (value && index < 3) {
+      document.getElementById(`otp-input-${index + 1}`).focus();
+    }
+  };
+
+  const handleKeyDown = (index, e) => {
+    
+    if (e.key === "Backspace" && !formData[index] && index > 0) {
+      document.getElementById(`otp-input-${index - 1}`).focus();
+    }
+  };
 
   const handleContinue = () => {
-    // Combine OTP digits
-    // const otpValue = formData.otp.join("");
-    // console.log("Entered OTP:", otpValue);
+    const otpValue = formData.join("");
+    console.log("Entered OTP:", otpValue);
 
-    // Add OTP validation logic here
-    // if (otpValue.length === 4) {
+    if (otpValue.length === 4) {
       navigate("/basic-details");
-  //   } else {
-  //     alert("Please enter a valid 4-digit OTP.");
-  //   }
+    } else {
+      alert("Please enter a valid 4-digit OTP.");
+    }
   };
 
   return (
@@ -59,34 +70,19 @@ const OTPVerification = () => {
         />
 
 <div className="flex gap-6 mt-16 ml-3">
-  <input
-    className="w-12 text-center text-2xl text-white bg-transparent border-0 border-b border-white  focus:outline-none focus:ring-0 "
-    inputMode="numeric"
-    maxLength="1"
-    placeholder=""
-  />
-  <input
-    className="w-12 text-center text-2xl text-white bg-transparent border-0 border-b border-white placeholder-white focus:outline-none focus:ring-0 "
-    type="text"
-    inputMode="numeric"
-    maxLength="1"
-    placeholder=""
-  />
-  <input
-    className="w-12 text-center text-2xl text-white bg-transparent border-0 border-b border-white placeholder-white focus:outline-none focus:ring-0 "
-    type="text"
-    inputMode="numeric"
-    maxLength="1"
-    placeholder=""
-  />
-  <input
-    className="w-12 text-center text-2xl text-white bg-transparent border-0 border-b border-white placeholder-white focus:outline-none focus:ring-0 "
-    type="text"
-    inputMode="numeric"
-    maxLength="1"
-    placeholder=""
-  />
-</div>
+          {formData.map((digit, index) => (
+            <input
+              key={index}
+              id={`otp-input-${index}`}
+              className="w-12 text-center text-2xl text-white bg-transparent border-0 border-b border-white focus:outline-none focus:ring-0"
+              inputMode="numeric"
+              maxLength="1"
+              value={digit}
+              onChange={(e) => handleOTPChange(index, e.target.value)}
+              onKeyDown={(e) => handleKeyDown(index, e)}
+            />
+          ))}
+        </div>
 
 
 

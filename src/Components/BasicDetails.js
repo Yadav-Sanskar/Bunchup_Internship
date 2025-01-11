@@ -146,33 +146,56 @@ const BasicDetails = () => {
 
         
 
-<div className="relative mt-6">
+<div className="relative mt-6 flex items-center">
   {/* Placeholder text styled like a label */}
-  <div
-    className={`absolute flex mt-2 text-white ${
-      details.dob ? "hidden" : ""
-    }`}
-  >
-    Date of Birth
-  </div>
+  {!details.dob && (
+    <div className="absolute text-white left-0 top-1 pointer-events-none">
+      Date of Birth
+    </div>
+  )}
 
   {/* Date Input */}
   <input
-    // type="date"
+    type="date"
     name="dob"
-    className="w-32 border-b border-gray-300 bg-transparent py-1 text-lg text-white focus:outline-none focus:border-white focus:ring-0 flex"
+    className="w-32 border-b border-gray-300 bg-transparent py-1 text-lg text-white appearance-none focus:outline-none focus:border-white focus:ring-0"
     value={details.dob}
     onChange={handleInputChange}
-    
   />
+
+  {/* Calendar Icon */}
+  <button
+    className="ml-3 text-white focus:outline-none"
+    onClick={() => {
+      // Focus the input field on button click
+      document.querySelector('input[name="dob"]').focus();
+    }}
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      className="w-6 h-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M8 7V3m8 4V3m-9 8h10m-8 4h6M3 7a2 2 0 012-2h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"
+      />
+    </svg>
+  </button>
 </div>
+
+
 
 
         {/* Continue Button */}
         <div className="flex flex-col items-center mt-12">
           <button onClick={handleContinue} className="bg-gradient-to-r from-[rgba(255,240,0,1)] to-red-300 text-black text-xl py-2 px-4 transition w-full rounded-full  border-black  mt-3 mb-11">
             Continue
-          </button>
+          </button> 
         </div>
       </div>
     </div>

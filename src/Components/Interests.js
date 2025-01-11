@@ -1,57 +1,83 @@
-import React, { useState } from "react";
-import interestData from "../Data/interest.json"; // Ensure this path is correct
+import React, { useState, useEffect } from "react";
 
 const Interests = () => {
-  const interests = interestData.data.results;
+  const [data, setData] = useState(null);
+  const [selectedInterests, setSelectedInterests] = useState([]);
+  const [error, setError] = useState(null);
 
-  // Group interests by categories based on the icon or some other attribute you want (e.g., gaming, sports)
-  const categories = {
-    "Sports & Gaming": ["Football", "Cricket", "Chess", "Boxing", "Bowling", "E-Sports", "Basketball", "Baseball", "Badminton", "Athletics"],
-    "Skill Building": ["Hackathons", "Writing", "Design", "Poetry", "Content creation"],
-    "Nature & Sceneries": ["Sunrise", "Sunset", "Staycations", "Spa Weekends", "Hiking Trips", "Fishing Trips", "Exploring new cities", "Camping", "Beaches", "Road Trips", "Trekking"],
-    "Music": ["Song Premier", "Karaoke", "Concert", "Live music"],
-    "Movies": ["Sci-fi", "Comedy", "Horror", "Action", "Romance", "Crime/Thriller"],
-    "Arts": ["Martial Arts", "Gym", "Cycling", "Aerobic", "Meditation", "Gymnastics", "Running", "Yoga"],
-    "Clubbing": ["College fest", "Amusements park", "Open mike", "Escape room", "Bounce", "Standup comedy", "DJ night", "Launch events", "Pubs", "Bar", "Club", "Arcade cafe", "Dog cafe", "Cat cafe", "Tea mates", "Coffee mates"]
+  useEffect(() => {
+    // Fetch the JSON data
+    fetch("/Data/interest.json")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((jsonData) => setData(jsonData))
+      .catch((err) => setError(err.message));
+  }, []);
+
+  const toggleInterest = (interestId) => {
+    if (selectedInterests.includes(interestId)) {
+      setSelectedInterests((prev) => prev.filter((id) => id !== interestId));
+    } else {
+      setSelectedInterests((prev) => [...prev, interestId]);
+    }
   };
 
-  // State to hold selected category
-  const [selectedCategory, setSelectedCategory] = useState("Sports & Gaming");
+  if (error) {
+    return <div className="text-red-500">Error: {error}</div>;
+  }
 
-  // Filtered interests based on category
-  const filteredInterests = interests.filter(interest => categories[selectedCategory].includes(interest.name));
-
-  const handleCategoryChange = (category) => {
-    setSelectedCategory(category);
-  };
+  if (!data) {
+    return <div>Loading...</div>;
+  }
 
   return (
-    <div className="container mx-auto p-6">
-      <h1 className="text-3xl font-bold text-center mb-8">Select Your Interests</h1>
-      <div className="flex justify-center mb-6">
-        {/* Category Selector */}
-        <div className="space-x-4">
-          {Object.keys(categories).map((category) => (
-            <button
-              key={category}
-              onClick={() => handleCategoryChange(category)}
-              className={`px-4 py-2 rounded-lg ${selectedCategory === category ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
-            >
-              {category}
-            </button>
-          ))}
+    <div className="container mx-auto p-4">
+      {data.categories.map((category) => (
+        <div key={category.id} className="mb-6">
+          <h2 className="text-2xl font-bold text-gray-800 mb-2">
+            {category.title}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {category.interests.map((interest) => (
+              <div
+                key={interest.id}
+                className={`flex items-center justify-between p-4 border rounded-lg cursor-pointer ${
+                  selectedInterests.includes(interest.id)
+                    ? "bg-blue-100 border-blue-500"
+                    : "bg-white border-gray-300"
+                }`}
+                onClick={() => toggleInterest(interest.id)}
+              >
+                <div className="flex items-center space-x-4">
+                  <span className="material-icons text-lg text-blue-500">
+                    {interest.icon}
+                  </span>
+                  <span className="text-gray-700 font-medium">
+                    {interest.name}
+                  </span>
+                </div>
+                {selectedInterests.includes(interest.id) && (
+                  <span className="material-icons text-green-500">check</span>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-      <div className="space-y-4">
-        <h2 className="text-2xl font-semibold mb-4">{selectedCategory}</h2>
-        <div className="grid grid-cols-2 gap-4">
-          {filteredInterests.map((interest, index) => (
-            <div key={index} className="flex items-center space-x-2">
-              <i className={`material-icons text-2xl`}>{interest.icon}</i>
-              <label htmlFor={interest.name} className="text-lg">{interest.name}</label>
-            </div>
-          ))}
-        </div>
+      ))}
+      <div className="mt-6">
+        <h3 className="text-xl font-bold">Selected Interests:</h3>
+        <ul className="list-disc pl-6">
+          {selectedInterests.map((interestId) => {
+            const interest = data.categories
+              .flatMap((cat) => cat.interests)
+              .find((i) => i.id === interestId);
+            return <li key={interestId}>{interest.name}</li>;
+          })}
+        </ul>
       </div>
     </div>
   );

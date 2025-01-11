@@ -1,0 +1,21 @@
+{
+    "categories": [
+      {
+        "id": 1,
+        "title": "Sports",
+        "interests": [
+          { "id": 101, "name": "Football", "icon": "sports_soccer" },
+          { "id": 102, "name": "Cricket", "icon": "sports_cricket" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Music",
+        "interests": [
+          { "id": 201, "name": "Guitar", "icon": "music_note" },
+          { "id": 202, "name": "Piano", "icon": "piano" }
+        ]
+      }
+    ]
+  }
+  
