@@ -1,86 +1,74 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
-const Interests = () => {
+const App = () => {
   const [data, setData] = useState(null);
-  const [selectedInterests, setSelectedInterests] = useState([]);
-  const [error, setError] = useState(null);
 
+  // Fetch data from the public folder
   useEffect(() => {
-    // Fetch the JSON data
     fetch("/Data/interest.json")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then((jsonData) => setData(jsonData))
-      .catch((err) => setError(err.message));
+      .then((response) => response.json())
+      .then((data) => setData(data.data.results)) // Set results as the data state
+      .catch((error) => console.error("Error loading data:", error));
   }, []);
 
-  const toggleInterest = (interestId) => {
-    if (selectedInterests.includes(interestId)) {
-      setSelectedInterests((prev) => prev.filter((id) => id !== interestId));
-    } else {
-      setSelectedInterests((prev) => [...prev, interestId]);
-    }
-  };
-
-  if (error) {
-    return <div className="text-red-500">Error: {error}</div>;
-  }
-
+  // Handle loading state
   if (!data) {
     return <div>Loading...</div>;
   }
 
   return (
-    <div className="container mx-auto p-4">
-      {data.categories.map((category) => (
-        <div key={category.id} className="mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-2">
-            {category.title}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {category.interests.map((interest) => (
-              <div
-                key={interest.id}
-                className={`flex items-center justify-between p-4 border rounded-lg cursor-pointer ${
-                  selectedInterests.includes(interest.id)
-                    ? "bg-blue-100 border-blue-500"
-                    : "bg-white border-gray-300"
-                }`}
-                onClick={() => toggleInterest(interest.id)}
-              >
-                <div className="flex items-center space-x-4">
-                  <span className="material-icons text-lg text-blue-500">
-                    {interest.icon}
-                  </span>
-                  <span className="text-gray-700 font-medium">
-                    {interest.name}
-                  </span>
-                </div>
-                {selectedInterests.includes(interest.id) && (
-                  <span className="material-icons text-green-500">check</span>
-                )}
+    <div className="relative flex items-center justify-center h-screen w-screen overflow-hidden">
+      {/* Background Gradient and Effects */}
+      <div className="absolute inset-0">
+        <div
+          className="absolute inset-0 bg-gradient-to-br"
+          style={{
+            background: "linear-gradient(135deg,rgba(15, 15, 15, 0.97)40%,rgb(15, 15, 15) 60%)",
+          }}
+        ></div>
+        <div className="absolute top-0 right-52 w-[350px] h-[150px] bg-[rgba(255,240,0,1)]/100  rounded-full blur-[150px]"></div>
+        <div className="absolute bottom-0 left-60 w-[350px] h-[100px] bg-[rgba(255,240,0,1)]/100 rounded-full blur-[150px]"></div>
+      </div>
+
+      {/* Glass Effect Container */}
+      <div
+        className="relative z-10 bg-white/10 backdrop-blur-lg border border-white/20 bg-transparent rounded-[20px] p-8 shadow-lg text-center max-w-md"
+        style={{ width: "352px", height: "450px", overflowY: "auto" }}
+      >
+        {/* Content inside the scrollable area */}
+        <div className="w-full h-full">
+          {data.map((category) => (
+            <div key={category.id}>
+              {/* Main Card */}
+              <div className="bg-white shadow-lg rounded-lg p-4 flex items-center justify-start mb-4">
+                <img
+                  src={category.icon}
+                  alt={category.title}
+                  className="w-14 h-14 rounded-full mr-4" // Increased icon size for clarity
+                />
+                <h1 className="text-sm font-bold text-left overflow-hidden">{category.title}</h1> {/* Ensure full name is visible */}
               </div>
-            ))}
-          </div>
+
+              {/* Interests List */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 mt-2">
+                {category.interests.map((interest) => (
+                  <div
+                    key={interest.id}
+                    className="bg-gray-100 p-4 rounded-lg shadow hover:shadow-lg transition"
+                  >
+                    <div className="flex items-center justify-center text-center">
+                      <span className={`mdi mdi-${interest.icon} text-2xl mr-3`}></span> {/* Larger icon size */}
+                      <p className="text-sm font-semibold">{interest.name}</p> {/* Ensure full name is visible */}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
-      <div className="mt-6">
-        <h3 className="text-xl font-bold">Selected Interests:</h3>
-        <ul className="list-disc pl-6">
-          {selectedInterests.map((interestId) => {
-            const interest = data.categories
-              .flatMap((cat) => cat.interests)
-              .find((i) => i.id === interestId);
-            return <li key={interestId}>{interest.name}</li>;
-          })}
-        </ul>
       </div>
     </div>
   );
 };
 
-export default Interests;
+export default App;

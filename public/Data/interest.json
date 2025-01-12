@@ -1,21 +1,479 @@
+
 {
-    "categories": [
-      {
-        "id": 1,
-        "title": "Sports",
-        "interests": [
-          { "id": 101, "name": "Football", "icon": "sports_soccer" },
-          { "id": 102, "name": "Cricket", "icon": "sports_cricket" }
-        ]
-      },
-      {
-        "id": 2,
-        "title": "Music",
-        "interests": [
-          { "id": 201, "name": "Guitar", "icon": "music_note" },
-          { "id": 202, "name": "Piano", "icon": "piano" }
-        ]
-      }
-    ]
+  "success": true,
+  "data": {
+      "results": [
+          {
+              "title": "Sports & Gaming",
+              "icon": "https://bunchup.s3.amazonaws.com/categories/sportsAndGaming.png",
+              "interests": [
+                  {
+                      "name": "Athletics",
+                      "icon": "run-fast",
+                      "id": "650378dfc849d679e2f94e14"
+                  },
+                  {
+                      "name": "Badminton",
+                      "icon": "badminton",
+                      "id": "650378efc849d679e2f94e17"
+                  },
+                  {
+                      "name": "Baseball",
+                      "icon": "baseball",
+                      "id": "65037900c849d679e2f94e1a"
+                  },
+                  {
+                      "name": "Basketball",
+                      "icon": "basketball",
+                      "id": "65037912c849d679e2f94e1d"
+                  },
+                  {
+                      "name": "E-Sports",
+                      "icon": "gamepad-variant",
+                      "id": "65037922c849d679e2f94e20"
+                  },
+                  {
+                      "name": "Bowling",
+                      "icon": "bowling",
+                      "id": "65037933c849d679e2f94e23"
+                  },
+                  {
+                      "name": "Boxing",
+                      "icon": "boxing-glove",
+                      "id": "65037947c849d679e2f94e26"
+                  },
+                  {
+                      "name": "Chess",
+                      "icon": "chess-king",
+                      "id": "65037959c849d679e2f94e29"
+                  },
+                  {
+                      "name": "Cricket",
+                      "icon": "cricket",
+                      "id": "65037971c849d679e2f94e2c"
+                  },
+                  {
+                      "name": "Cycling",
+                      "icon": "bike",
+                      "id": "650371cbc849d679e2f94da2"
+                  },
+                  {
+                      "name": "Football",
+                      "icon": "soccer",
+                      "id": "650379b1c849d679e2f94e30"
+                  }
+              ],
+              "id": "650489faae44ceddc7d8d1c9"
+          },
+          {
+              "title": "Skill Building",
+              "icon": "https://bunchup.s3.amazonaws.com/categories/skillBuilding.png",
+              "interests": [
+                  {
+                      "name": "Dance",
+                      "icon": "dance-pole",
+                      "id": "6504325cff2348288940ac88"
+                  },
+                  {
+                      "name": "Design",
+                      "icon": "palette-outline",
+                      "id": "6504326dff2348288940ac8b"
+                  },
+                  {
+                      "name": "Make-Up",
+                      "icon": "face-woman-shimmer",
+                      "id": "650432abff2348288940ac8e"
+                  },
+                  {
+                      "name": "Making Videos",
+                      "icon": "video-plus",
+                      "id": "650432bdff2348288940ac91"
+                  },
+                  {
+                      "name": "Singing",
+                      "icon": "microphone-variant",
+                      "id": "650432cdff2348288940ac94"
+                  },
+                  {
+                      "name": "Writing",
+                      "icon": "pencil-box-outline",
+                      "id": "650432dcff2348288940ac97"
+                  },
+                  {
+                      "name": "Hackathons",
+                      "icon": "laptop",
+                      "id": "650432efff2348288940ac9a"
+                  }
+              ],
+              "id": "6504857aae44ceddc7d8d1b9"
+          },
+          {
+              "title": "Nature & Sceneries",
+              "icon": "https://bunchup.s3.amazonaws.com/categories/natureAndSceneries.png",
+              "interests": [
+                  {
+                      "name": "Trekking",
+                      "icon": "hiking",
+                      "id": "650374c4c849d679e2f94ddc"
+                  },
+                  {
+                      "name": "Road Trips",
+                      "icon": "car",
+                      "id": "650374f5c849d679e2f94ddf"
+                  },
+                  {
+                      "name": "Beaches",
+                      "icon": "beach",
+                      "id": "6503750ac849d679e2f94de2"
+                  },
+                  {
+                      "name": "Camping",
+                      "icon": "campfire",
+                      "id": "65037528c849d679e2f94de5"
+                  },
+                  {
+                      "name": "Exploring new cities",
+                      "icon": "city",
+                      "id": "65037541c849d679e2f94de8"
+                  },
+                  {
+                      "name": "Fishing Trips",
+                      "icon": "fish",
+                      "id": "6503755cc849d679e2f94deb"
+                  },
+                  {
+                      "name": "Hiking Trips",
+                      "icon": "biathlon",
+                      "id": "6503756ec849d679e2f94dee"
+                  },
+                  {
+                      "name": "Spa Weekends",
+                      "icon": "hot-tub",
+                      "id": "65037580c849d679e2f94df1"
+                  },
+                  {
+                      "name": "Staycations",
+                      "icon": "home-city",
+                      "id": "65037594c849d679e2f94df4"
+                  },
+                  {
+                      "name": "Sunset",
+                      "icon": "weather-sunset",
+                      "id": "650375a5c849d679e2f94df7"
+                  },
+                  {
+                      "name": "Sunrise",
+                      "icon": "white-balance-sunny",
+                      "id": "650375b6c849d679e2f94dfa"
+                  }
+              ],
+              "id": "650377cec849d679e2f94dfd"
+          },
+          {
+              "title": "Music & Jamming",
+              "icon": "https://bunchup.s3.amazonaws.com/categories/musicAndJamming.png",
+              "interests": [
+                  {
+                      "name": "Concert",
+                      "icon": "music-note",
+                      "id": "65037416c849d679e2f94dd0"
+                  },
+                  {
+                      "name": "Karaoke",
+                      "icon": "microphone",
+                      "id": "6503742fc849d679e2f94dd3"
+                  },
+                  {
+                      "name": "Song Premier",
+                      "icon": "music-clef-treble",
+                      "id": "6503744dc849d679e2f94dd6"
+                  }
+              ],
+              "id": "650374b1c849d679e2f94dd9"
+          },
+          {
+              "title": "Movies & Theatre",
+              "icon": "https://bunchup.s3.amazonaws.com/categories/moviesAndTheatre.png",
+              "interests": [
+                  {
+                      "name": "Crime/Thriller",
+                      "icon": "bullet",
+                      "id": "65037294c849d679e2f94dae"
+                  },
+                  {
+                      "name": "Romance",
+                      "icon": "heart",
+                      "id": "650372a8c849d679e2f94db1"
+                  },
+                  {
+                      "name": "Action",
+                      "icon": "sword-cross",
+                      "id": "650372bcc849d679e2f94db4"
+                  },
+                  {
+                      "name": "Horror",
+                      "icon": "ghost",
+                      "id": "650372dbc849d679e2f94db7"
+                  },
+                  {
+                      "name": "Comedy",
+                      "icon": "emoticon-happy-outline",
+                      "id": "650372efc849d679e2f94dba"
+                  },
+                  {
+                      "name": "Anime",
+                      "icon": "animation-play",
+                      "id": "65037305c849d679e2f94dbd"
+                  },
+                  {
+                      "name": "Movie Premier",
+                      "icon": "ticket",
+                      "id": "6503731ac849d679e2f94dc0"
+                  },
+                  {
+                      "name": "Mystery",
+                      "icon": "magnify",
+                      "id": "6503732ec849d679e2f94dc3"
+                  },
+                  {
+                      "name": "Philosophy",
+                      "icon": "book-open-variant",
+                      "id": "65037341c849d679e2f94dc6"
+                  },
+                  {
+                      "name": "Sci-fi",
+                      "icon": "robot",
+                      "id": "65037355c849d679e2f94dc9"
+                  }
+              ],
+              "id": "650373f0c849d679e2f94dcd"
+          },
+          {
+              "title": "Health & Fitness",
+              "icon": "https://bunchup.s3.amazonaws.com/categories/healthAndFitness.png",
+              "interests": [
+                  {
+                      "name": "Yoga",
+                      "icon": "yoga",
+                      "id": "65037112c849d679e2f94d92"
+                  },
+                  {
+                      "name": "Running",
+                      "icon": "run",
+                      "id": "65037123c849d679e2f94d95"
+                  },
+                  {
+                      "name": "Gymnastics",
+                      "icon": "weight-lifter",
+                      "id": "6503717fc849d679e2f94d98"
+                  },
+                  {
+                      "name": "Meditation",
+                      "icon": "meditation",
+                      "id": "65037195c849d679e2f94d9b"
+                  },
+                  {
+                      "name": "Aerobic",
+                      "icon": "dumbbell",
+                      "id": "650371b7c849d679e2f94d9f"
+                  },
+                  {
+                      "name": "Cycling",
+                      "icon": "bike",
+                      "id": "650371cbc849d679e2f94da2"
+                  },
+                  {
+                      "name": "Gym",
+                      "icon": "weight-lifter",
+                      "id": "650371dec849d679e2f94da5"
+                  },
+                  {
+                      "name": "Martial Arts",
+                      "icon": "karate",
+                      "id": "650371f1c849d679e2f94da8"
+                  }
+              ],
+              "id": "65037279c849d679e2f94dab"
+          },
+          {
+              "title": "Fests and Expo",
+              "icon": "https://bunchup.s3.amazonaws.com/categories/festsAndExpo.png",
+              "interests": [
+                  {
+                      "name": "College fest",
+                      "icon": "school",
+                      "id": "65036dd8c849d679e2f94d71"
+                  },
+                  {
+                      "name": "Tech-fest",
+                      "icon": "laptop",
+                      "id": "65036deec849d679e2f94d74"
+                  },
+                  {
+                      "name": "Street-fest",
+                      "icon": "road-variant",
+                      "id": "65036e07c849d679e2f94d77"
+                  },
+                  {
+                      "name": "Expo",
+                      "icon": "chart-line-variant",
+                      "id": "65036e17c849d679e2f94d7a"
+                  },
+                  {
+                      "name": "Vintage / Heritage",
+                      "icon": "archive",
+                      "id": "65036e2bc849d679e2f94d7d"
+                  }
+              ],
+              "id": "65036ea1c849d679e2f94d80"
+          },
+          {
+              "title": "Comedy & Fun",
+              "icon": "https://bunchup.s3.amazonaws.com/categories/comedyAndFun.png",
+              "interests": [
+                  {
+                      "name": "Standup comedy",
+                      "icon": "emoticon-lol",
+                      "id": "65036c3dc849d679e2f94d5e"
+                  },
+                  {
+                      "name": "Bounce",
+                      "icon": "jump-rope",
+                      "id": "65036c55c849d679e2f94d61"
+                  },
+                  {
+                      "name": "Escape room",
+                      "icon": "exit-to-app",
+                      "id": "65036c66c849d679e2f94d64"
+                  },
+                  {
+                      "name": "Open mike",
+                      "icon": "microphone-variant",
+                      "id": "65036c79c849d679e2f94d67"
+                  },
+                  {
+                      "name": "Amusements park",
+                      "icon": "car-child-seat",
+                      "id": "65036c9cc849d679e2f94d6b"
+                  }
+              ],
+              "id": "65036dc4c849d679e2f94d6e"
+          },
+          {
+              "title": "Clubbing & Bars",
+              "icon": "https://bunchup.s3.amazonaws.com/categories/clubbingAndBars.png",
+              "interests": [
+                  {
+                      "name": "Club",
+                      "icon": "glass-cocktail",
+                      "id": "65036b22c849d679e2f94d49"
+                  },
+                  {
+                      "name": "Live music",
+                      "icon": "music",
+                      "id": "65036b38c849d679e2f94d4c"
+                  },
+                  {
+                      "name": "Bar",
+                      "icon": "glass-mug-variant",
+                      "id": "65036b4bc849d679e2f94d4f"
+                  },
+                  {
+                      "name": "Pubs",
+                      "icon": "beer",
+                      "id": "65036b5fc849d679e2f94d52"
+                  },
+                  {
+                      "name": "Launch events",
+                      "icon": "rocket",
+                      "id": "65036b73c849d679e2f94d55"
+                  },
+                  {
+                      "name": "DJ night",
+                      "icon": "speaker",
+                      "id": "65036b86c849d679e2f94d58"
+                  }
+              ],
+              "id": "65036c0ec849d679e2f94d5b"
+          },
+          {
+              "title": "Cafe Hopping",
+              "icon": "https://bunchup.s3.amazonaws.com/categories/cafeHopping.png",
+              "interests": [
+                  {
+                      "name": "Coffee mates",
+                      "icon": "coffee",
+                      "id": "65036a02c849d679e2f94d37"
+                  },
+                  {
+                      "name": "Tea mates",
+                      "icon": "kettle-steam-outline",
+                      "id": "65036a13c849d679e2f94d3a"
+                  },
+                  {
+                      "name": "Cat cafe",
+                      "icon": "cat",
+                      "id": "65036a25c849d679e2f94d3d"
+                  },
+                  {
+                      "name": "Dog cafe",
+                      "icon": "dog",
+                      "id": "65036a3bc849d679e2f94d40"
+                  },
+                  {
+                      "name": "Arcade cafe",
+                      "icon": "gamepad",
+                      "id": "65036a4dc849d679e2f94d43"
+                  }
+              ],
+              "id": "65036af1c849d679e2f94d46"
+          },
+          {
+              "title": "Art & Creativity",
+              "icon": "https://bunchup.s3.amazonaws.com/categories/artAndCreativity.png",
+              "interests": [
+                  {
+                      "name": "Art Gallery",
+                      "icon": "palette",
+                      "id": "6503661fc849d679e2f94d13"
+                  },
+                  {
+                      "name": "Craft",
+                      "icon": "draw",
+                      "id": "6503669ac849d679e2f94d16"
+                  },
+                  {
+                      "name": "Content creation",
+                      "icon": "camera",
+                      "id": "65036703c849d679e2f94d19"
+                  },
+                  {
+                      "name": "Poetry",
+                      "icon": "feather",
+                      "id": "65036713c849d679e2f94d1c"
+                  },
+                  {
+                      "name": "Dancing",
+                      "icon": "dance-ballroom",
+                      "id": "6503672ac849d679e2f94d1f"
+                  },
+                  {
+                      "name": "Library & Books",
+                      "icon": "book",
+                      "id": "65036741c849d679e2f94d22"
+                  },
+                  {
+                      "name": "Makeup",
+                      "icon": "lipstick",
+                      "id": "65036757c849d679e2f94d25"
+                  }
+              ],
+              "id": "6503697ec849d679e2f94d34"
+          }
+      ],
+      "page": 1,
+      "limit": 100,
+      "totalPages": 1,
+      "totalResults": 11
   }
-  
+}
