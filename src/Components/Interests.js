@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const App = () => {
   const [data, setData] = useState(null);
+  const [selected, setSelected] = useState([]);
 
   // Fetch data from the public folder
   useEffect(() => {
@@ -11,6 +12,15 @@ const App = () => {
       .catch((error) => console.error("Error loading data:", error));
   }, []);
 
+  // Toggle selected interests 
+  const toggleSelect = (interest) => {
+    setSelected((prev) =>
+      prev.includes(interest)
+        ? prev.filter((item) => item !== interest)
+        : [...prev, interest]
+    );
+  };
+
   // Handle loading state
   if (!data) {
     return <div>Loading...</div>;
@@ -18,54 +28,96 @@ const App = () => {
 
   return (
     <div className="relative flex items-center justify-center h-screen w-screen overflow-hidden">
-      {/* Background Gradient and Effects */}
+      {/* Full-Screen Glass Background */}
       <div className="absolute inset-0">
+        {/* Gradient Overlay */}
         <div
           className="absolute inset-0 bg-gradient-to-br"
           style={{
-            background: "linear-gradient(135deg,rgba(15, 15, 15, 0.97)40%,rgb(15, 15, 15) 60%)",
+            background:
+              "linear-gradient(135deg, rgb(15, 15, 15) 40%, rgb(15, 15, 15) 60%)",
           }}
         ></div>
-        <div className="absolute top-0 right-52 w-[350px] h-[150px] bg-[rgba(255,240,0,1)]/100  rounded-full blur-[150px]"></div>
-        <div className="absolute bottom-0 left-60 w-[350px] h-[100px] bg-[rgba(255,240,0,1)]/100 rounded-full blur-[150px]"></div>
+
+        {/* Subtle Yellow Glow */}
+        <div className="absolute top-0 left-52 w-[350px] h-[150px] bg-[rgba(255,240,0,1)]/100 rounded-full blur-[150px]"></div>
+        <div className="absolute bottom-0 right-60 w-[350px] h-[100px] bg-[rgba(255,240,0,1)]/100 rounded-full blur-[150px]"></div>
       </div>
 
-      {/* Glass Effect Container */}
+      {/* Glass Box */}
       <div
-        className="relative z-10 bg-white/10 backdrop-blur-lg border border-white/20 bg-transparent rounded-[20px] p-8 shadow-lg text-center max-w-md"
-        style={{ width: "352px", height: "450px", overflowY: "auto" }}
+        className="relative z-10 bg-white/10 backdrop-blur-lg border border-white/20 rounded-[20px] p-6 shadow-lg"
+        style={{ width: "352px", height: "600px" }}
       >
-        {/* Content inside the scrollable area */}
-        <div className="w-full h-full">
-          {data.map((category) => (
-            <div key={category.id}>
-              {/* Main Card */}
-              <div className="bg-white shadow-lg rounded-lg p-4 flex items-center justify-start mb-4">
-                <img
-                  src={category.icon}
-                  alt={category.title}
-                  className="w-14 h-14 rounded-full mr-4" // Increased icon size for clarity
-                />
-                <h1 className="text-sm font-bold text-left overflow-hidden">{category.title}</h1> {/* Ensure full name is visible */}
-              </div>
+        {/* Header */}
+        <h1 className="text-4xl font-bold mb-1 bg-gradient-to-b from-[rgba(255,240,0,1)] text-[rgb(253,246,132)] bg-clip-text text-transparent text-center ">Your Interests</h1>
+        <p className="text-[rgba(255,255,255,1)] text-center mb-4 mt-3 text-[18px]">
+          Choose at least 5 interests
+        </p>
 
-              {/* Interests List */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 mt-2">
+        {/* Selected Counter */}
+        <div className="relative z-10   border border-white/10 rounded-[10px]  shadow-lg "> 
+
+        <div className="bg-[rgba(255,255,255,0.07)] text-white text-center py-2 mb-4 mt-0 rounded-t-[10px] rounded-b-none backdrop-blur-sm">
+  <span style={{ color: 'rgba(255, 240, 0, 1)' }}>{selected.length}</span> Selected
+</div>
+
+
+        {/* Scrollable Content */}
+        <div
+          className="overflow-y-scroll h-[315px] scrollbar-hidden pr-2 pl-2"
+          style={{
+            scrollbarWidth: "none", // Hide scrollbar in Firefox
+          }}
+        >
+          
+          {data.map((category) => (
+            <div key={category.id} className="mb-6">
+              {/* Category Title */}
+              <h2 className="text-gray-300 font-semibold text-[20px] mb-3">
+                {category.title}
+              </h2>
+
+              {/* Interests Grid */}
+              <div className="grid grid-cols-2 gap-2">
                 {category.interests.map((interest) => (
                   <div
                     key={interest.id}
-                    className="bg-gray-100 p-4 rounded-lg shadow hover:shadow-lg transition"
+                    className={`flex items-center justify-center p-2 rounded-full text-sm font-semibold cursor-pointer transition ${
+                      selected.includes(interest.name)
+                        ? "bg-[rgba(255,240,0,1)] text-black"
+                        : "bg-gray-700 text-gray-300 hover:bg-gray-600"
+                    }`}
+                    onClick={() => toggleSelect(interest.name)}
                   >
-                    <div className="flex items-center justify-center text-center">
-                      <span className={`mdi mdi-${interest.icon} text-2xl mr-3`}></span> {/* Larger icon size */}
-                      <p className="text-sm font-semibold">{interest.name}</p> {/* Ensure full name is visible */}
-                    </div>
+                    <span
+                      className={`mdi mdi-${interest.icon} text-lg ${
+                        selected.includes(interest.name)
+                          ? "text-black"
+                          : "text-white"
+                      } mr-2`}
+                    ></span>
+                    {interest.name}
                   </div>
                 ))}
               </div>
+              {/* See More */}
+              <p className="text-[rgba(243,220,12,1)] text-xs mt-2 cursor-pointer hover:underline">
+                  See more
+              </p>
+
             </div>
           ))}
         </div>
+        </div>
+
+        {/* Continue Button */}
+        <button
+          className=" bg-gradient-to-r from-[rgba(255,240,0,1)] to-red-300 text-black text-xl py-2 px-4 transition w-full rounded-full  border-black  mt-6 "
+          disabled={selected.length < 5}       
+        >
+          Continue
+        </button>
       </div>
     </div>
   );

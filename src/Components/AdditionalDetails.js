@@ -109,22 +109,26 @@ const AdditionalDetails = () => {
         : "bg-[rgba(255,255,255,0.1)] text-white"
     }`}
   />
-  {/* Dropdown for Search Results */}
+  
+
   {searchTerm && filteredColleges.length > 0 && (
-    <div
-      className="absolute w-full bg-[rgba(255,255,255,0.9)] backdrop-blur-md border border-gray-300 mt-1 rounded-lg shadow-lg max-h-60 overflow-y-auto z-10"
-    >
-      {filteredColleges.slice(0, 5).map((college) => (
-        <div
-          key={college.id}
-          className="px-4 py-2 cursor-pointer hover:bg-gray-200 transition-all duration-150"
-          onClick={() => handleSelectCollege(college.collegeName)}
-        >
-          {college.collegeName}
-        </div>
-      ))}
-    </div>
-  )}
+  <div
+    className="absolute w-full max-h-60 bg-black/90 border border-gray-600 mt-1 rounded-lg shadow-lg overflow-y-auto scrollbar scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent z-10 scrollbar-thumb-[40px]"
+  >
+    {filteredColleges.slice(0, 10).map((college) => (
+      <div
+        key={college.id}
+        className="px-4 py-3 text-sm text-gray-200 cursor-pointer hover:bg-[rgba(255,240,0,1)] hover:text-black transition-all duration-150 rounded-md mx-2"
+        onClick={() => handleSelectCollege(college.collegeName)}
+      >
+        {college.collegeName}
+      </div>
+    ))}
+  </div>
+)}
+
+
+
 </div>
 
 

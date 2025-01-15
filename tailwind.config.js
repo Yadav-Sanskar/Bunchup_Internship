@@ -4,8 +4,17 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      // You can add custom scrollbar thumb height here
+      scrollbar: {
+        thumb: {
+          '40': '40px', // Custom thumb height
+        },
+      },
+    },
   },
-  plugins: [],
-}
+  plugins: [
+    require('tailwind-scrollbar')({ nocompatible: true }),
+  ],
+};
 
