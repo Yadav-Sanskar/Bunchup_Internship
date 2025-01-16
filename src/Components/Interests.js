@@ -121,7 +121,13 @@ const App = () => {
 
         {/* Continue Button */}
         <button
-          className="bg-gradient-to-r from-[rgba(255,240,0,1)] to-red-300 text-black text-xl py-2 px-4 transition w-full rounded-full border-black mt-6"
+          className="text-black text-xl py-2 px-4 transition w-full rounded-full border-black mt-6"
+          style={{
+            background: `
+              radial-gradient(92.58% 3558.8% at 7.42% 100%, #FFF000 0%, #FF8A00 100%)
+            `,
+            backgroundBlendMode: "overlay",
+          }}
           disabled={selected.length < 5}
         >
           Continue

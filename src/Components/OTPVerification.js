@@ -57,7 +57,7 @@ const OTPVerification = () => {
 
       <div className="relative z-10 bg-white/10 backdrop-blur-lg border border-white/20 bg-transparent rounded-[20px] p-8 shadow-lg text-center max-w-md" style={{ width: "352px" }}>
         <h1 className="text-2xl font-bold text-white mb-0">
-          Welcome to <span className="text-[rgba(255,240,0,1)]">BunchUp</span>
+          Welcome to <span className="bg-gradient-to-b from-[rgba(255,240,0,1)] to-[rgba(253,246,132,1)] bg-clip-text text-transparent">BunchUp</span>
         </h1>
         <h1 className="text-sm font-bold text-white mb-0 mt-5">Enter the OTP sent to</h1>
         <h1 className="text-sm font-bold text-white mb-10 ">+9689675896</h1>
@@ -99,7 +99,13 @@ const OTPVerification = () => {
 
         <button
           onClick={handleContinue}
-          className="bg-gradient-to-r from-[rgba(255,240,0,1)] to-red-300 text-black text-xl py-2 px-4 transition w-full rounded-full  border-black  mt-7 mb-8"
+          className=" text-black text-xl py-2 px-4 transition w-full rounded-full  border-black  mt-7 mb-8"
+          style={{
+            background: `
+              radial-gradient(92.58% 3558.8% at 7.42% 100%, #FFF000 0%, #FF8A00 100%)
+            `,
+            backgroundBlendMode: "overlay",
+          }}
         >
           Continue
         </button>

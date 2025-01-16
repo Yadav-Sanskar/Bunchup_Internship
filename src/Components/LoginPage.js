@@ -34,7 +34,7 @@ const LoginPage = () => {
         ></div>
 
         {/* Subtle Yellow Glow */}
-        <div className="absolute top-0 right-52 w-[350px] h-[200px] bg-[rgba(255,240,0,1)]/100  rounded-full blur-[150px]"></div>
+        <div className="absolute top-0 right-52 w-[350px] h-[150px] bg-[rgba(255,240,0,1)]/100  rounded-full blur-[150px]"></div>
 
         <div className="absolute bottom-0 left-60 w-[350px] h-[150px] bg-[rgba(255,240,0,1)]/100 rounded-full blur-[150px]"></div>
       </div>
@@ -42,7 +42,7 @@ const LoginPage = () => {
       {/* Login Box */}
       <div className="relative z-10 bg-white/10 backdrop-blur-lg border border-white/20 bg-transparent rounded-[20px] p-8 shadow-lg text-center max-w-md" style={{ width: "352px" }}>
         <h1 className="text-2xl font-bold text-white mb-0">
-          Welcome to <span className="text-[rgba(255,240,0,1)]">BunchUp</span>
+          Welcome to <span className="bg-gradient-to-b from-[rgba(255,240,0,1)] to-[rgba(253,246,132,1)] bg-clip-text text-transparent">BunchUp</span>
         </h1>
         <p className="text-white text-xs">Get ready to move out and have fun</p>
 
@@ -78,14 +78,20 @@ const LoginPage = () => {
         </div>
         <button
           onClick={handleLogin}
-          className="bg-gradient-to-r from-[rgba(255,240,0,1)] to-red-300 text-black text-xl py-2 px-4 transition w-full rounded-full  border-black mt-3  "
+          className=" text-black text-xl py-2 px-4 transition w-full rounded-full  border-black mt-3  "
+                      style={{
+                background: `
+                  radial-gradient(92.58% 3558.8% at 7.42% 100%, #FFF000 0%, #FF8A00 100%)
+                `,
+                backgroundBlendMode: "overlay",
+              }}
         >
           Log in
         </button>
 
         <p className="text-base text-white mt-2 mb-4">
           Don't have an account? {" "}
-          <Link to="/create-account" className="text-teal-50 text-xl cursor-pointer">
+          <Link to="/create-account" className="text-[rgba(250, 250, 250, 1)] text-[18px] cursor-pointer">
             Sign up
           </Link>
         </p>

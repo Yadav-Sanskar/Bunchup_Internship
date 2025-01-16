@@ -42,7 +42,7 @@ const BasicDetails = () => {
       </div>
 
       <div className="relative z-10 bg-white/10 backdrop-blur-lg border border-white/20 bg-transparent rounded-[20px] p-8 shadow-lg text-center max-w-md" style={{ width: "352px" }}>
-        <h1 className="text-4xl font-bold text-[rgba(255,240,0,1)] mb-14 mt-7">Basic Details</h1>
+        <h1 className="text-4xl font-bold bg-gradient-to-b from-[rgba(255,240,0,1)] to-[rgba(253,246,132,1)] bg-clip-text text-transparent mb-14 mt-7">Basic Details</h1>
 
         {/* Full Name Input */}
         <input
@@ -117,7 +117,13 @@ const BasicDetails = () => {
         <div className="flex flex-col items-center mt-12">
           <button
             onClick={handleContinue}
-            className="bg-gradient-to-r from-[rgba(255,240,0,1)] to-red-300 text-black text-xl py-2 px-4 transition w-full rounded-full border-black mt-3 mb-11"
+            className=" text-black text-xl py-2 px-4 transition w-full rounded-full border-black mt-3 mb-11"
+            style={{
+              background: `
+                radial-gradient(92.58% 3558.8% at 7.42% 100%, #FFF000 0%, #FF8A00 100%)
+              `,
+              backgroundBlendMode: "overlay",
+            }}
           >
             Continue
           </button>

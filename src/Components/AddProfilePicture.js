@@ -39,8 +39,8 @@ const App = () => {
       </div>
 
       <div className="relative z-10 bg-white/10 backdrop-blur-lg border border-white/20 bg-transparent rounded-[20px] p-8 shadow-lg text-center max-w-md" style={{ width: "352px" }}>
-        <h1 className="text-3xl font-bold text-[rgba(255,240,0,1)] mb-">Show us how </h1>
-        <h1 className="text-3xl font-bold text-[rgba(255,240,0,1)] mb-"> you look</h1>
+        <h1 className="text-3xl font-bold bg-gradient-to-b from-[rgba(255,240,0,1)] to-[rgba(253,246,132,1)] bg-clip-text text-transparent ">Show us how </h1>
+        <h1 className="text-3xl font-bold bg-gradient-to-b from-[rgba(253,246,132,1)] to-[rgba(253,246,132,1)] bg-clip-text text-transparent"> you look</h1>
 
         <div className="mt-7 mb-5 relative">
           {profileImage ? (
@@ -85,7 +85,13 @@ const App = () => {
           Add a clear picture of yourself
         </label>
 
-        <button onClick={handleLogin} className="verify-button bg-gradient-to-r from-yellow-300 to-yellow-600 text-black font-medium py-2 px-4 transition w-full rounded-full mt-16 text-xl">
+        <button onClick={handleLogin} className="verify-button  text-black font-medium py-2 px-4 transition w-full rounded-full mt-16 text-xl"
+             style={{
+              background: `
+                radial-gradient(92.58% 3558.8% at 7.42% 100%, #FFF000 0%, #FF8A00 100%)
+              `,
+              backgroundBlendMode: "overlay",
+            }}>
           Get Profile Verified
         </button>
         <p className="verification-details text-gray-300 text-xs mb-5 mt-3">
