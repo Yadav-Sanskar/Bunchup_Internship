@@ -113,12 +113,12 @@ const AdditionalDetails = () => {
 
   {searchTerm && filteredColleges.length > 0 && (
   <div
-    className="absolute w-full max-h-60 bg-black/90 border border-gray-600 mt-1 rounded-lg shadow-lg overflow-y-auto scrollbar scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent z-10 scrollbar-thumb-[40px]"
+    className="absolute w-full max-h-60 bg-[rgba(44,44,39,1)] border border-gray-600 mt-1 rounded-lg shadow-lg overflow-y-auto scrollbar scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent z-10 scrollbar-thumb-[40px]"
   >
     {filteredColleges.slice(0, 10).map((college) => (
       <div
         key={college.id}
-        className="px-4 py-3 text-sm text-gray-200 cursor-pointer hover:bg-[rgba(255,240,0,1)] hover:text-black transition-all duration-150 rounded-md mx-2"
+        className="px-4 py-3 text-sm text-gray-200 bg-black-300 cursor-pointer hover:bg-[rgba(255,240,0,1)] hover:text-black transition-all duration-150 rounded-md mx-2"
         onClick={() => handleSelectCollege(college.collegeName)}
       >
         {college.collegeName}
