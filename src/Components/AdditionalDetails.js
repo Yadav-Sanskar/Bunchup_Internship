@@ -70,8 +70,8 @@ const AdditionalDetails = () => {
             background: "linear-gradient(135deg,rgba(15, 15, 15, 0.97)40%,rgb(15, 15, 15) 60%)",
           }}
         ></div>
-        <div className="absolute top-0 right-52 w-[350px] h-[150px] bg-[rgba(255,240,0,1)]/100  rounded-full blur-[150px]"></div>
-        <div className="absolute bottom-0 left-60 w-[350px] h-[100px] bg-[rgba(255,240,0,1)]/100 rounded-full blur-[150px]"></div>
+        <div className="absolute top-0 left-52 w-[300px] h-[150px] bg-[rgba(255,240,0,1)]/100  rounded-full blur-[150px]"></div>
+        <div className="absolute bottom-0 right-60 w-[350px] h-[100px] bg-[rgba(255,240,0,1)]/100 rounded-full blur-[150px]"></div>
       </div>
 
       <div className="relative z-10 bg-white/10 backdrop-blur-lg border border-white/20 bg-transparent rounded-[20px] p-8 shadow-lg text-center max-w-md" style={{ width: "352px" }}>
@@ -95,59 +95,67 @@ const AdditionalDetails = () => {
         </div>
 
         {/* Conditionally Render College Selection Only */}
-{!isNotInCollege && (
+        {!isNotInCollege && (
   <div className="relative mt-4">
-    <p className="text-white text-xl flex mb-1 font-bold ">Select College</p>
+    <p className="text-white text-xl flex mb-1 font-bold">Select College</p>
 
     <div className="relative">
-      {/* Search Icon Inside the Input */}
-      <SearchIcon size={20} color="white" className="absolute left-3 top-1/2 transform -translate-y-1/2" />
-
-      <input
-        type="text"
-        name="college"
-        placeholder="Search for a college"
-        value={searchTerm}
-        onChange={handleSearchChange}
-        className={`w-full pl-12 py-2 text-3sm  placeholder-white focus:outline-none focus:ring-0 rounded-full h-10 ${details.college ? "bg-[rgba(255,240,0,1)] text-black placeholder-black" : "bg-[rgba(255,255,255,0.1)] text-white"}`}
-      />
-
-      {/* Cross Button to Unselect College on the Right */}
-      {details.college && (
-        <button
-          onClick={() => {
-            setDetails({ ...details, college: "" });  // Reset the selected college
-            setSearchTerm("");  // Optionally clear the search input
-          }}
-          className="absolute right-3 top-1/2 transform -translate-y-1/2 text-black text-xl text-bold"
-        >
-          &#10005; {/* Cross Icon */}
-        </button>
-      )}
-
-      {searchTerm && filteredColleges.length > 0 && (
-        <div className="absolute w-full max-h-60 bg-[rgba(44,44,39,1)] border border-gray-600 mt-1 rounded-lg shadow-lg overflow-y-auto scrollbar scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent z-10 scrollbar-thumb-[40px]">
-          {filteredColleges.slice(0, 10).map((college) => (
-            <div
-              key={college.id}
-              className="px-4 py-3 text-sm text-gray-200 bg-black-300 cursor-pointer hover:bg-[rgba(255,240,0,1)] hover:text-black transition-all duration-150 rounded-md mx-2"
-              onClick={() => handleSelectCollege(college.collegeName)}
-            >
-              {/* Displaying full college name in separate lines */}
-              <p className="text-wrap">{college.collegeName}</p>
-            </div>
-          ))}
+      {/* Check if a college is selected */}
+      {details.college ? (
+        // Show the selected college name instead of the search box
+        <div className="flex items-center justify-between bg-[rgba(255,240,0,1)] text-black font-bold  rounded-md">
+          <span className="text-sm">{details.college}</span>
+          <button
+            onClick={() => {
+              setDetails({ ...details, college: "" }); // Reset the selected college
+              setSearchTerm(""); // Clear the search term
+            }}
+            className="text-2xl font-bold text-black mr-1"
+          >
+            &#10005; {/* Cross Icon */}
+          </button>
         </div>
+      ) : (
+        // Show the search box when no college is selected
+        <>
+          <SearchIcon
+            size={20}
+            color="white"
+            className="absolute left-3 top-1/2 transform -translate-y-1/2"
+          />
+          <input
+            type="text"
+            name="college"
+            placeholder="Search for a college"
+            value={searchTerm}
+            onChange={handleSearchChange}
+            className="w-full pl-12 py-2 text-3sm placeholder-white focus:outline-none focus:ring-0 rounded-full h-10 bg-[rgba(255,255,255,0.1)] text-white"
+          />
+          {searchTerm && filteredColleges.length > 0 && (
+            <div className="absolute w-full max-h-60 bg-[rgba(44,44,39,1)] border border-gray-600 mt-1 rounded-lg shadow-lg overflow-y-auto scrollbar scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent z-10 scrollbar-thumb-[40px]">
+              {filteredColleges.slice(0, 10).map((college) => (
+                <div
+                  key={college.id} // Unique key for React (internal use, not displayed)
+                  className="px-4 py-3 text-sm text-gray-200 bg-black-300 cursor-pointer hover:bg-[rgba(255,240,0,1)] hover:text-black transition-all duration-150 rounded-md mx-2"
+                  onClick={() => handleSelectCollege(college.collegeName)}
+                >
+                  <p className="text-wrap">{college.collegeName}</p>
+                </div>
+              ))}
+            </div>
+          )}
+        </>
       )}
     </div>
 
-    
-            <p className="text-gray-400 text-xs block mb-0 mt-1">
-              Select your college to know what's happening <br />
-            </p>
-            <span className="text-gray-400 text-xs mr-40 mt-0">at your college</span>
-          </div>
-        )}
+    <p className="text-gray-400 text-xs block mb-0 mt-1">
+      Select your college to know what's happening <br />
+    </p>
+    <span className="text-gray-400 text-xs mr-40 mt-0">at your college</span>
+  </div>
+)}
+
+
 
         {/* Checkbox to indicate "Not in college" */}
         <div className="flex mt-5 gap-2 items-center">
