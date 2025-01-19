@@ -47,12 +47,9 @@ const AdditionalDetails = () => {
   };
 
   const handleContinue = () => {
-    if (details.college && details.bio) {
-      navigate("/add-profile-picture", { state: { ...details } });
-    } else {
-      alert("Please fill in the bio and select a college");
-    }
+    navigate("/add-profile-picture", { state: { ...details } });
   };
+  
 
   const handleNotInCollegeChange = (e) => {
     setIsNotInCollege(e.target.checked); // Toggle checkbox state
