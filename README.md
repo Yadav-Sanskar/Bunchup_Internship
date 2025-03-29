@@ -1,5 +1,8 @@
 # Getting Started with Create React App
 
+## Live Demo  
+[Click here to view the project](https://bunchup-internship-8ch6.vercel.app/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
