@@ -34,7 +34,7 @@ A fully responsive and modern web application built using ReactJS as part of an 
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/bunchup.git
+git clone https://github.com/Yadav-Sanskar/Bunchup_Internship.git
 
 # Go into the project folder
 cd bunchup
