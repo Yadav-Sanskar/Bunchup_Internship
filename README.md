@@ -1,5 +1,12 @@
 # 🚀 BunchUp – React Internship Project
 
+> 🌟 Developed with passion by **Sanskar Yadav**, a full-stack developer and cybersecurity enthusiast, this project showcases clean design, modern tech stack, and real-world problem-solving using ReactJS.
+
+🔗 **Portfolio**: [https://portfolio-drab-phi-82.vercel.app/](https://portfolio-drab-phi-82.vercel.app/)  
+🔗 **LinkedIn**: [https://www.linkedin.com/in/sanskar-yadav-721710229/](https://www.linkedin.com/in/sanskar-yadav-721710229/)
+
+---
+
 A fully responsive and modern web application built using ReactJS as part of an internship project. Designed with a sleek UI and clean architecture, this project demonstrates component-based development, routing, date pickers, and integration of MUI (Material UI) for professional interface design.
 
 🔴 **Live Demo**: [Click here to view](https://bunchup-internship-8ch6.vercel.app/)
@@ -44,6 +51,3 @@ npm install
 
 # Start the development server
 npm start
-
-
-Visit 👉 http://localhost:3000 in your browser.
